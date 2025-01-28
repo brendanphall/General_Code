@@ -69,8 +69,8 @@ def project(input_path, output_path, target_crs):
 if __name__ == '__main__':
     logMessage("Script started")
     try:
-        infile = "Archive.zip"  # Input ZIP file
-        outdir = "Output"  # Output directory
+        infile = "TMBPoints_QGis_reprojected.zip"  # Input ZIP file
+        outdir = "Output_TMB2"  # Output2 directory
         target_crs = 'EPSG:3857'  # Web Mercator
 
         if not infile or not outdir:
