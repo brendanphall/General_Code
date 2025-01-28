@@ -69,8 +69,8 @@ def project(input_path, output_path, target_crs):
 if __name__ == '__main__':
     logMessage("Script started")
     try:
-        infile = sys.argv[1]  # Input ZIP file
-        outdir = sys.argv[2]  # Output directory
+        infile = "Archive.zip"  # Input ZIP file
+        outdir = "Output"  # Output directory
         target_crs = 'EPSG:3857'  # Web Mercator
 
         if not infile or not outdir:
