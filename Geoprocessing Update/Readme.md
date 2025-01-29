@@ -1,4 +1,4 @@
-Data Review Script
+Data Review
 
 This script analyzes a given input directory or ZIP archive containing geospatial data, particularly shapefiles, and generates an XML report summarizing the contents. It extracts file hierarchy information, validates shapefile components, and collects geospatial metadata, including coordinate reference system (CRS), bounding box, feature count, geometry types, attributes, and sample data.
 
