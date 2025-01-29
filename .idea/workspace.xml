@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e1908a1-7c56-494e-a41e-ea08326d02f6" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Solution/Conversion_script_consolidated.py" beforeDir="false" afterPath="$PROJECT_DIR$/Geoprocessing Update/Solution/Conversion_script_consolidated.py" afterDir="false" />
-    </list>
+    <list default="true" id="0e1908a1-7c56-494e-a41e-ea08326d02f6" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +46,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Python.Conversion_Script_complete.executor": "Run",
+    "Python.Conversion_script_consolidated (1).executor": "Run",
     "Python.Conversion_script_consolidated.executor": "Run",
     "Python.Solution.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -202,7 +200,7 @@
       <workItem from="1737990083935" duration="1967000" />
       <workItem from="1738077358753" duration="1376000" />
       <workItem from="1738079115086" duration="959000" />
-      <workItem from="1738080249487" duration="28837000" />
+      <workItem from="1738080249487" duration="29166000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <option name="closed" value="true" />
@@ -404,7 +402,31 @@
       <option name="project" value="LOCAL" />
       <updated>1738186744252</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738188002784</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1738188002785</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738188168943</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1738188168943</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738188270605</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1738188270605</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,8 +449,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python$Conversion_script_consolidated.coverage" NAME="Conversion_script_consolidated Coverage Results" MODIFIED="1738187938978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Geoprocessing Update/Testing/TMBPoints_QGis_reprojected" />
+    <SUITE FILE_PATH="coverage/Python$Conversion_script_consolidated.coverage" NAME="Conversion_script_consolidated Coverage Results" MODIFIED="1738187975836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Geoprocessing Update/Testing/TMBPoints_QGis_reprojected" />
     <SUITE FILE_PATH="coverage/Python$Solution.coverage" NAME="Solution Coverage Results" MODIFIED="1738100401182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Geoprocessing Update" />
     <SUITE FILE_PATH="coverage/Python$Conversion_Script_complete.coverage" NAME="Conversion_Script_complete Coverage Results" MODIFIED="1738186393459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Geoprocessing Update/Solution" />
+    <SUITE FILE_PATH="coverage/Python$Conversion_script_consolidated__1_.coverage" NAME="Conversion_script_consolidated (1) Coverage Results" MODIFIED="1738188157394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Geoprocessing Update/Solution" />
   </component>
 </project>

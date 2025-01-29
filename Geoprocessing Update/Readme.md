@@ -8,4 +8,4 @@ This script processes geospatial data by extracting and converting shapefiles in
 
 /Solution /Conversion_Script_consolidated.py
 
-This script includes base .zip file handling and geoprocessing without any errors, logging or advnaced file handling.
+This script includes .zip and directory file handling and geoprocessing without any errors, logging or advnaced file handling.
