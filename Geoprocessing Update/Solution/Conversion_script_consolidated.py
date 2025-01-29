@@ -1,10 +1,24 @@
+import zipfile
 import fiona
 import json
 import os
+import tempfile
 from fiona.transform import transform_geom
 
 TARGET_CRS = 'EPSG:3857'
 
+def extract_shapefiles(zip_path, temp_dir):
+    """
+    Extracts shapefiles from a ZIP archive.
+    """
+    extracted_files = []
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        zip_ref.extractall(temp_dir)
+        for name in zip_ref.namelist():
+            extracted_path = os.path.join(temp_dir, name)
+            if name.endswith('.shp'):
+                extracted_files.append(extracted_path)
+    return extracted_files
 
 def convert_to_arcgis_json(input_shp):
     output_json = f"reprojected_{os.path.splitext(os.path.basename(input_shp))[0]}.json"
@@ -38,7 +52,15 @@ def convert_to_arcgis_json(input_shp):
 
     print(f"Saved: {output_json}")
 
-
+# Process shapefiles or ZIP archives
 for file in os.listdir():
-    if file.endswith('.shp'):
-        convert_to_arcgis_json(file)
+    file_path = os.path.join(os.getcwd(), file)
+    if file.endswith('.zip'):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            shapefiles = extract_shapefiles(file_path, temp_dir)
+            if not shapefiles:
+                print(f"No shapefiles found in {file}")
+            for shp in shapefiles:
+                convert_to_arcgis_json(shp)
+    elif file.endswith('.shp'):
+        convert_to_arcgis_json(file_path)
