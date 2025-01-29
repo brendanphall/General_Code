@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e1908a1-7c56-494e-a41e-ea08326d02f6" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/Conversion_Script.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Geoprocessing Update/Data/Conversion_Script.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Solution/Solution_testing.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,12 +48,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.Conversion_Script_complete.executor": "Run",
     "Python.Solution.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/brendanhall/Library/CloudStorage/OneDrive-Sewall/Python/Geoprocessing Update/Data",
+    "last_opened_file_path": "/Users/brendanhall/Library/CloudStorage/OneDrive-Sewall/Python/Geoprocessing Update/Solution",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Geoprocessing Update/Solution" />
       <recent name="$PROJECT_DIR$/Geoprocessing Update/Data" />
       <recent name="$PROJECT_DIR$/Geoprocessing Update" />
       <recent name="$PROJECT_DIR$" />
@@ -75,7 +78,30 @@
       <recent name="$PROJECT_DIR$/Geoprocessing Update/Data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Conversion_Script_complete">
+    <configuration name="Conversion_Script_complete" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="General Code" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Geoprocessing Update/Solution" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Geoprocessing Update/Solution/Conversion_Script_complete.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="General Code" />
       <option name="ENV_FILES" value="" />
@@ -101,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Conversion_Script_complete" />
         <item itemvalue="Python.Solution" />
       </list>
     </recent_temporary>
@@ -125,7 +152,7 @@
       <workItem from="1737990083935" duration="1967000" />
       <workItem from="1738077358753" duration="1376000" />
       <workItem from="1738079115086" duration="959000" />
-      <workItem from="1738080249487" duration="21980000" />
+      <workItem from="1738080249487" duration="22979000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <option name="closed" value="true" />
@@ -223,7 +250,31 @@
       <option name="project" value="LOCAL" />
       <updated>1738174645024</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738174689349</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738174689349</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738175647777</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738175647777</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738175684562</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738175684562</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,5 +298,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python$Solution.coverage" NAME="Solution Coverage Results" MODIFIED="1738100401182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Geoprocessing Update" />
+    <SUITE FILE_PATH="coverage/Python$Conversion_Script_complete.coverage" NAME="Conversion_Script_complete Coverage Results" MODIFIED="1738175622002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Geoprocessing Update/Solution" />
   </component>
 </project>
