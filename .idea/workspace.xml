@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e1908a1-7c56-494e-a41e-ea08326d02f6" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/.idea/easycode.ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/easycode/codebase-v2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/Conversion_Script.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Geoprocessing Update/Data/Conversion_Script.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/Directory_Report.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.cpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.dbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.prj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.sbn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.sbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.shp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.shp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/PointsOut.shx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geoprocessing Update/Data/reprojected_PointsOut.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +125,7 @@
       <workItem from="1737990083935" duration="1967000" />
       <workItem from="1738077358753" duration="1376000" />
       <workItem from="1738079115086" duration="959000" />
-      <workItem from="1738080249487" duration="21749000" />
+      <workItem from="1738080249487" duration="21980000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <option name="closed" value="true" />
@@ -223,7 +207,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738173725639</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738174519742</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738174519742</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update">
+      <option name="closed" value="true" />
+      <created>1738174645024</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738174645024</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
