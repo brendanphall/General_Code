@@ -2,7 +2,7 @@ import zipfile
 import os
 import logging
 import json
-from os.path import join, splitext, basename, isfile, isdir
+from os.path import join, splitext, basename, isdir
 import fiona
 from fiona.transform import transform_geom
 import tempfile
@@ -23,6 +23,7 @@ warnings.filterwarnings("once", category=FionaDeprecationWarning)
 INPUT_PATH = "Data"  # Input directory or ZIP file
 OUTPUT_DIR = "Output"  # Output directory
 TARGET_CRS = 'EPSG:3857'  # Target CRS for reprojection (Web Mercator)
+
 
 # -----------------------------------
 # Utility Functions
@@ -63,17 +64,6 @@ def extract_files(input_path, temp_dir):
         raise ValueError("Input must be a valid ZIP file or directory.")
 
 
-def is_valid_geometry(geometry):
-    """
-    Validates if a geometry is valid using Shapely.
-    """
-    try:
-        geom = shape(geometry)
-        return geom.is_valid
-    except Exception:
-        return False
-
-
 def convert_to_arcgis_json(input_path, output_path, target_crs):
     """
     Converts a shapefile to ArcGIS JSON format after reprojecting.
@@ -88,20 +78,23 @@ def convert_to_arcgis_json(input_path, output_path, target_crs):
             for feature in source:
                 if feature['geometry']:  # Ensure geometry is not missing
                     transformed_geom = transform_geom(source_crs, target_crs, feature['geometry'])
-                    arcgis_feature = {
-                        "geometry": {
-                            "rings": transformed_geom['coordinates'] if transformed_geom['type'] == 'Polygon' else [],
-                            "spatialReference": {"wkid": 3857}
-                        },
-                        "attributes": dict(feature['properties'])  # Ensure properties are serializable
-                    }
-                else:
-                    arcgis_feature = {
-                        "geometry": None,  # Explicitly set missing geometry to None
-                        "attributes": dict(feature['properties'])
-                    }
+                    geom_type = transformed_geom['type']
 
-                features.append(arcgis_feature)
+                    if geom_type == 'Point':
+                        geometry = {"x": transformed_geom['coordinates'][0], "y": transformed_geom['coordinates'][1]}
+                    elif geom_type == 'LineString':
+                        geometry = {"paths": [transformed_geom['coordinates']]}
+                    elif geom_type == 'Polygon':
+                        geometry = {"rings": transformed_geom['coordinates']}
+                    else:
+                        geometry = None  # Unsupported geometry types
+
+                    if geometry:
+                        geometry["spatialReference"] = {"wkid": 3857}
+                        features.append({
+                            "geometry": geometry,
+                            "attributes": dict(feature['properties'])
+                        })
 
         with open(output_path, 'w') as json_file:
             json.dump(features, json_file, indent=4)
@@ -109,6 +102,7 @@ def convert_to_arcgis_json(input_path, output_path, target_crs):
         logMessage(f"Converted and saved as ArcGIS JSON: {output_path}")
     except Exception as e:
         logMessage(f"Conversion error: {e}")
+
 
 # -----------------------------------
 # Main Execution Block
