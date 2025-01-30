@@ -8,9 +8,6 @@ from fiona.transform import transform_geom
 TARGET_CRS = 'EPSG:3857'
 
 def extract_shapefiles(zip_path, temp_dir):
-    """
-    Extracts shapefiles from a ZIP archive.
-    """
     extracted_files = []
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
         zip_ref.extractall(temp_dir)
@@ -56,7 +53,7 @@ def convert_to_arcgis_json(input_shp):
 
     print(f"Saved: {output_json}")
 
-# Process shapefiles or ZIP archives
+
 for file in os.listdir():
     file_path = os.path.join(os.getcwd(), file)
     if file.endswith('.zip'):
