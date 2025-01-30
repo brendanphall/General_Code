@@ -77,19 +77,24 @@ def convert_to_arcgis_json(input_path, output_path, target_crs):
             source_crs = source.crs
 
             for feature in source:
-                if feature['geometry']:  # Ensure geometry is not missing
-                    transformed_geom = transform_geom(source_crs, target_crs, feature['geometry'])
+                if feature['geometry']:
+                    transformed_geom = transform_geom(source_crs, TARGET_CRS, feature['geometry'])
                     geom_type = transformed_geom['type']
-
                     if geom_type == 'Point':
                         geometry = {"x": transformed_geom['coordinates'][0], "y": transformed_geom['coordinates'][1]}
                     elif geom_type == 'LineString':
                         geometry = {"paths": [transformed_geom['coordinates']]}
                     elif geom_type == 'Polygon':
                         geometry = {"rings": transformed_geom['coordinates']}
+                    elif geom_type == 'MultiPoint':
+                        geometry = {"points": transformed_geom['coordinates']}
+                    elif geom_type == 'MultiLineString':
+                        geometry = {"paths": transformed_geom['coordinates']}
+                    elif geom_type == 'MultiPolygon':
+                        geometry = {
+                            "rings": [ring for ring in transformed_geom['coordinates']]}  # Keep nested structure
                     else:
-                        geometry = None  # Unsupported geometry types
-
+                        geometry = None
                     if geometry:
                         geometry["spatialReference"] = {"wkid": 3857}
                         features.append({

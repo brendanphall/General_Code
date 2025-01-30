@@ -82,7 +82,7 @@
       <recent name="$PROJECT_DIR$/Geoprocessing Update/Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Conversion_script_consolidated_2">
+  <component name="RunManager" selected="Python.Conversion_Script_complete">
     <configuration name="Conversion_Script_complete" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="General Code" />
       <option name="ENV_FILES" value="" />
@@ -152,7 +152,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Conversion_script_consolidated_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Conversion_script_consolidated" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="General Code" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,7 +166,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Geoprocessing Update/Solution/Conversion_script_consolidated_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Geoprocessing Update/Solution/Conversion_script_consolidated.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,10 +200,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Conversion_Script_complete" />
         <item itemvalue="Python.Conversion_script_consolidated_2" />
         <item itemvalue="Python.Conversion_script_consolidated (1)" />
         <item itemvalue="Python.Conversion_script_consolidated" />
-        <item itemvalue="Python.Conversion_Script_complete" />
         <item itemvalue="Python.Solution" />
       </list>
     </recent_temporary>
