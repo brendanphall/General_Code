@@ -7,7 +7,6 @@ from os.path import join, splitext, basename, isdir
 import fiona
 from fiona.transform import transform_geom
 import tempfile
-from shapely.geometry import shape
 import warnings
 from fiona.errors import FionaDeprecationWarning  # Import the specific warning type
 
@@ -21,7 +20,7 @@ warnings.filterwarnings("once", category=FionaDeprecationWarning)
 # -----------------------------------
 # PATH VARIABLES: Define your input and output paths here
 # -----------------------------------
-INPUT_PATH = "Data"  # Input directory or ZIP file
+INPUT_PATH = "Archive2.zip"  # Input directory or ZIP file
 OUTPUT_DIR = "Output"  # Output directory
 TARGET_CRS = 'EPSG:3857'  # Target CRS for reprojection (Web Mercator)
 
