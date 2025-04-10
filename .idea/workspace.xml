@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e1908a1-7c56-494e-a41e-ea08326d02f6" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/Notion/Notion.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notion/Notion.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notion/Notion.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
