@@ -39,8 +39,15 @@ def safe_select(props, field):
 
 
 def safe_status(props, field):
-    status_value = props.get(field, {}).get("status")
-    return status_value.get("name") if status_value else ""
+    """Safely extract status value from Notion properties."""
+    try:
+        status_value = props.get(field, {}).get("status")
+        if status_value:
+            return status_value.get("name", "")
+        return ""
+    except Exception as e:
+        print(f"⚠️ Error extracting status: {e}")
+        return ""
 
 
 def fetch_notion_pages():
@@ -58,13 +65,28 @@ def fetch_notion_pages():
 def notion_to_csv():
     print("📥 Exporting Notion → CSV...")
     pages = fetch_notion_pages()
-    notion_lookup = {
-        page["properties"]["Title"]["title"][0]["plain_text"]: page
-        for page in pages if page["properties"]["Title"]["title"]
-    }
+    notion_lookup = {}
+    
+    # Create lookup by Group_ID instead of Title
+    for page in pages:
+        props = page.get("properties", {})
+        group_id = ""
+        if "Group_ID" in props:
+            group_id_prop = props["Group_ID"]
+            if group_id_prop.get("type") == "rich_text" and group_id_prop.get("rich_text"):
+                group_id = " ".join([r["plain_text"] for r in group_id_prop["rich_text"]])
+        
+        # Only add to lookup if Group_ID exists
+        if group_id:
+            notion_lookup[group_id] = page
+        else:
+            # For backward compatibility, also store by Title if no Group_ID
+            if "Title" in props and props["Title"].get("title"):
+                title = props["Title"]["title"][0]["plain_text"]
+                notion_lookup[title] = page
 
     backup = []
-    for title, page in notion_lookup.items():
+    for identifier, page in notion_lookup.items():
         props = page.get("properties", {})
 
         # Get Group_ID if it exists
@@ -73,6 +95,11 @@ def notion_to_csv():
             group_id_prop = props["Group_ID"]
             if group_id_prop.get("type") == "rich_text" and group_id_prop.get("rich_text"):
                 group_id = " ".join([r["plain_text"] for r in group_id_prop["rich_text"]])
+
+        # Get Title
+        title = ""
+        if "Title" in props and props["Title"].get("title"):
+            title = props["Title"]["title"][0]["plain_text"]
 
         backup.append({
             "#": group_id,  # Map Group_ID to # column
@@ -100,12 +127,20 @@ def load_spreadsheet(file_path):
         # Force string type for all columns
         if ext == '.csv':
             try:
+                # Try with UTF-8 first
                 data = pd.read_csv(file_path, encoding="utf-8", dtype=str).fillna("")
                 print(f"✅ Loaded {len(data)} rows using UTF-8.")
             except UnicodeDecodeError as e:
                 print(f"⚠️ UTF-8 decode failed: {e}")
-                data = pd.read_csv(file_path, encoding="ISO-8859-1", dtype=str).fillna("")
-                print(f"✅ Loaded {len(data)} rows using ISO-8859-1.")
+                try:
+                    # Try with ISO-8859-1 next
+                    data = pd.read_csv(file_path, encoding="ISO-8859-1", dtype=str).fillna("")
+                    print(f"✅ Loaded {len(data)} rows using ISO-8859-1.")
+                except Exception as e2:
+                    print(f"⚠️ ISO-8859-1 decode failed: {e2}")
+                    # Try with latin1 as a last resort
+                    data = pd.read_csv(file_path, encoding="latin1", dtype=str).fillna("")
+                    print(f"✅ Loaded {len(data)} rows using latin1.")
         elif ext == '.ods':
             data = pd.read_excel(file_path, engine="odf", dtype=str).fillna("")
             print(f"✅ Loaded {len(data)} rows from ODS file.")
@@ -115,8 +150,26 @@ def load_spreadsheet(file_path):
         else:
             raise ValueError(f"Unsupported file format: {ext}")
 
-        # Print column names for debugging
-        print(f"📊 Columns found in spreadsheet: {', '.join(data.columns)}")
+        # Remove unnamed columns
+        unnamed_cols = [col for col in data.columns if col.startswith('Unnamed:')]
+        if unnamed_cols:
+            print(f"⚠️ Removing {len(unnamed_cols)} unnamed columns")
+            data = data.drop(columns=unnamed_cols)
+        
+        # Check for required columns
+        required_columns = ['Title']
+        missing_columns = [col for col in required_columns if col not in data.columns]
+        if missing_columns:
+            print(f"⚠️ Missing required columns: {', '.join(missing_columns)}")
+            print(f"⚠️ Available columns: {', '.join(data.columns)}")
+            raise ValueError(f"Missing required columns: {', '.join(missing_columns)}")
+
+        # Remove completely empty rows (where all values are empty strings)
+        empty_rows_before = len(data)
+        data = data[~data.apply(lambda row: row.astype(str).str.strip().eq('').all(), axis=1)]
+        empty_rows_removed = empty_rows_before - len(data)
+        if empty_rows_removed > 0:
+            print(f"✅ Removed {empty_rows_removed} completely empty rows")
 
         # Create columns dict for the new dataframe
         columns_dict = {}
@@ -133,11 +186,24 @@ def load_spreadsheet(file_path):
 
         if '#' in data.columns:
             columns_dict['Group_ID'] = data['#']
-            # Show first few values for debugging
-            print(f"✅ Mapped '#' column to 'Group_ID' with values: {data['#'].head(3).tolist()}")
 
         # Create new dataframe in one operation to avoid fragmentation
         processed_data = pd.DataFrame(columns_dict)
+        
+        # Check for empty dataframe
+        if processed_data.empty:
+            print("⚠️ Warning: The processed dataframe is empty!")
+        else:
+            print(f"✅ Successfully processed {len(processed_data)} rows")
+            
+        # Check for duplicate titles
+        if 'Title' in processed_data.columns:
+            duplicates = processed_data[processed_data.duplicated(subset=['Title'], keep=False)]
+            if not duplicates.empty:
+                print(f"⚠️ Warning: Found {len(duplicates)} rows with duplicate titles:")
+                for title, count in duplicates['Title'].value_counts().items():
+                    if count > 1:
+                        print(f"   - '{title}' appears {count} times")
 
         return processed_data
 
@@ -148,10 +214,7 @@ def load_spreadsheet(file_path):
 
 def spreadsheet_to_notion(file_path):
     print("📤 Importing Spreadsheet → Notion...")
-    print(f"📂 Checking file: {file_path}")
-    print(f"🧪 File exists? {os.path.isfile(file_path)}")
-    print(f"📍 Working directory: {os.getcwd()}")
-
+    
     if not os.path.isfile(file_path):
         print(f"❌ File `{file_path}` does not exist on disk.")
         return
@@ -159,6 +222,7 @@ def spreadsheet_to_notion(file_path):
     # Load spreadsheet data
     try:
         data = load_spreadsheet(file_path)
+        print(f"📊 Total rows loaded from spreadsheet: {len(data)}")
     except Exception as e:
         print(f"❌ Failed to process spreadsheet: {e}")
         return
@@ -169,10 +233,27 @@ def spreadsheet_to_notion(file_path):
 
     # Fetch existing Notion pages
     pages = fetch_notion_pages()
-    notion_lookup = {
-        page["properties"]["Title"]["title"][0]["plain_text"]: page
-        for page in pages if page["properties"]["Title"]["title"]
-    }
+    notion_lookup = {}
+    
+    # Create lookup by Group_ID instead of Title
+    for page in pages:
+        props = page.get("properties", {})
+        group_id = ""
+        if "Group_ID" in props:
+            group_id_prop = props["Group_ID"]
+            if group_id_prop.get("type") == "rich_text" and group_id_prop.get("rich_text"):
+                group_id = " ".join([r["plain_text"] for r in group_id_prop["rich_text"]])
+        
+        # Only add to lookup if Group_ID exists
+        if group_id:
+            notion_lookup[group_id] = page
+        else:
+            # For backward compatibility, also store by Title if no Group_ID
+            if "Title" in props and props["Title"].get("title"):
+                title = props["Title"]["title"][0]["plain_text"]
+                notion_lookup[title] = page
+    
+    print(f"📚 Found {len(notion_lookup)} existing pages in Notion")
 
     # Get valid status options from database metadata
     valid_statuses = []
@@ -186,30 +267,43 @@ def spreadsheet_to_notion(file_path):
         print(f"⚠️ Failed to retrieve valid status options: {e}")
 
     created, updated, skipped = 0, 0, 0
+    row_count = 0
+    total_rows = len(data)
+    
+    print(f"🔄 Processing {total_rows} rows...")
 
     # Iterate rows in spreadsheet
-    for _, row in data.iterrows():
-        title = row["Title"] if "Title" in row and pd.notna(row["Title"]) else None
+    for index, row in data.iterrows():
+        row_count += 1
+        
+        # Check if Title exists and is not empty
+        if "Title" not in row:
+            skipped += 1
+            continue
+            
+        title = row["Title"] if pd.notna(row["Title"]) else None
 
         # Skip rows without a title
         if not title or str(title).strip() == "":
-            print("⚠️ Skipping row with no title")
             skipped += 1
             continue
 
-        existing = notion_lookup.get(title)
-
-        print(f"🔍 Processing row: {title}")
+        # Get Group_ID if it exists
+        group_id = None
+        if "Group_ID" in row and pd.notna(row["Group_ID"]) and str(row["Group_ID"]).strip():
+            group_id = str(row["Group_ID"]).strip()
+        
+        # Use Group_ID as primary key if available, otherwise fall back to Title
+        identifier = group_id if group_id else title
+        existing = notion_lookup.get(identifier)
+        
         properties = {
             "Title": {"title": text_block(title)}
         }
 
         # Add Group_ID field if it exists in the data
-        if "Group_ID" in row and pd.notna(row["Group_ID"]) and str(row["Group_ID"]).strip():
-            group_id_value = str(row["Group_ID"]).strip()
-            # For Group_ID, always use rich_text format
-            properties["Group_ID"] = {"rich_text": text_block(group_id_value)}
-            print(f"✅ Added Group_ID: {group_id_value}")
+        if group_id:
+            properties["Group_ID"] = {"rich_text": text_block(group_id)}
 
         # Rich text fields
         rich_text_fields = {
@@ -223,53 +317,45 @@ def spreadsheet_to_notion(file_path):
         for csv_field, notion_field in rich_text_fields.items():
             if csv_field in row and pd.notna(row[csv_field]) and str(row[csv_field]).strip():
                 properties[notion_field] = {"rich_text": text_block(str(row[csv_field]))}
-                print(
-                    f"✅ Added {notion_field}: {str(row[csv_field])[:30]}{'...' if len(str(row[csv_field])) > 30 else ''}")
 
         # Status field - validate and preserve existing status
-        if existing and "Status" in row and pd.notna(row["Status"]) and str(row["Status"]).strip():
+        if "Status" in row and pd.notna(row["Status"]) and str(row["Status"]).strip():
             status_value = str(row["Status"]).strip()
 
             # Check if status is valid
             if valid_statuses and status_value not in valid_statuses:
-                print(f"⚠️ Invalid status '{status_value}'. Valid options are: {', '.join(valid_statuses)}")
-
                 # Get existing status if available
                 existing_status = ""
                 try:
-                    existing_props = existing.get("properties", {})
+                    existing_props = existing.get("properties", {}) if existing else {}
                     if "Status" in existing_props:
                         existing_status = safe_status(existing_props, "Status")
                         if existing_status and existing_status in valid_statuses:
-                            print(f"✅ Keeping existing status: {existing_status}")
                             properties["Status"] = {"status": {"name": existing_status}}
-                except Exception:
-                    pass
+                except Exception as e:
+                    print(f"⚠️ Error getting existing status: {e}")
 
                 # Fallback if no existing status
                 if "Status" not in properties:
                     # Map 'Cancelled' to 'Rejected' if available
                     if status_value == "Cancelled" and "Rejected" in valid_statuses:
-                        print(f"⚠️ Mapping 'Cancelled' to 'Rejected'")
                         properties["Status"] = {"status": {"name": "Rejected"}}
                     # Otherwise use New as fallback
                     elif "New" in valid_statuses:
-                        print(f"⚠️ Using 'New' as fallback status")
                         properties["Status"] = {"status": {"name": "New"}}
             else:
                 # Use valid status from spreadsheet
                 properties["Status"] = {"status": {"name": status_value}}
-                print(f"✅ Using status: {status_value}")
 
         # For new items, always set a status
         elif not existing and ("Status" not in properties) and valid_statuses:
-            print(f"⚠️ No valid status for new item, using 'New'")
             if "New" in valid_statuses:
                 properties["Status"] = {"status": {"name": "New"}}
 
         # Priority field
         if "Priority" in row and pd.notna(row["Priority"]) and str(row["Priority"]).strip():
-            properties["Priority"] = {"select": {"name": str(row["Priority"]).strip()}}
+            priority_value = str(row["Priority"]).strip()
+            properties["Priority"] = {"select": {"name": priority_value}}
 
         # Tags field
         if "Tags" in row and pd.notna(row["Tags"]) and str(row["Tags"]).strip():
@@ -279,17 +365,27 @@ def spreadsheet_to_notion(file_path):
         try:
             if existing:
                 notion.pages.update(page_id=existing["id"], properties=properties)
-                print(f"🔄 Updated: {title}")
                 updated += 1
             else:
                 notion.pages.create(parent={"database_id": DATABASE_ID}, properties=properties)
-                print(f"➕ Created: {title}")
                 created += 1
         except Exception as e:
-            print(f"❌ Failed to sync '{title}': {e}")
+            print(f"❌ Failed to sync '{identifier}': {e}")
             skipped += 1
 
+        # Show progress every 10 rows
+        if row_count % 10 == 0 or row_count == total_rows:
+            print(f"🔄 Progress: {row_count}/{total_rows} rows processed")
+
         time.sleep(0.4)
+
+    # Verify that all rows were processed
+    processed = created + updated + skipped
+    if processed != total_rows:
+        print(f"⚠️ Warning: Processed {processed} rows but expected {total_rows} rows")
+        print(f"⚠️ Created: {created}, Updated: {updated}, Skipped: {skipped}")
+    else:
+        print(f"✅ All {total_rows} rows were processed")
 
     print(f"\n✅ Spreadsheet Sync Done: {created} created, {updated} updated, {skipped} skipped.")
 
