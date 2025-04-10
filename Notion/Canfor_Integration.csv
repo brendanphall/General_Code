@@ -1,0 +1,21 @@
+Title,Status,Expected Changes,Feature Request Response,General Notes,Estimate,Cost,Tags
+Disable Zoom-to on Feature Select,Planned,"When selecting a point or polygon, the map should no longer automatically zoom to it",Feature request logged; pending prioritization.,Mentioned multiple times by Canfor field users as a disruption,,,Canfor
+Create Downloads Page,Planned,Static page or dynamic table listing supported formats,"Agreed this is a good interim solution. Long-term, integration with external report generator is preferred.",Mentioned in discussion about increasing report usability,,,Canfor
+Show Label on Select,Planned,Symbols selected should show identifying label,Confirmed as an active usability request; UI team to scope.,Expected to reduce time spent identifying tracts in field,,,Canfor
+Download Format Clarity,Planned,"Add tooltip or UI text to clarify e.g., SHP, GeoPackage",Already flagged in previous discussion—folding into this release.,Prompted by confusion from field testers during training,,,Canfor
+Grouping for TOC Layers,Planned,"Allow collapsible/expandable groups (e.g., “Navigation Layers”)",Worth exploring with upcoming layer tree redesign,Ties into longer term plan to streamline layer management,,,Canfor
+Tract Filtering by ID,Planned,Add text filter for ID fields,Noted for future filter enhancements,Could be tied into broader “smart search” capabilities,,,Canfor
+Rename 'Sales Navigation Options' to 'Tract Navigation Options',Planned,"UI label should reflect ""Tract Navigation Options"" in picker and TOC",Completed by dev team in April 7 release,Requested by multiple stakeholders ,,,Canfor
+Create Downloads Page & Improve Format Clarity,Planned,Show all export formats and add tooltips per format,Interim fix agreed on; full integration to follow,Prompted by user confusion during training sessions,,,Canfor
+Add query definitions to navigation layers,New,Apply query definitions based on Navigation Options fields.,,Requested by Morgan ,,,Canfor
+Simplify CSP Tract Points symbology,New,"Use single symbol type, distinguish by company vs supplier.",,April 7 feedback,,,Canfor
+Enable multi-select for Location and Forester picklists,New,Allow users to select multiple values.,,Request from Morgan ,,,Canfor
+Toggle layer visibility by symbol in TOC,New,Enable toggling by unique symbol group in Table of Contents.,,Reported by Nate,,,Canfor
+Create geometry from Report-All in Edit,New,Add support for geometry creation from report-all query.,,Captured in release notes,,,Canfor
+Enable shape upload in Edit menu,New,Allow shape file uploads directly via Edit panel.,,From April 7 demo notes,,,Canfor
+Change zoom level on point select,New,Modify zoom level to be closer when selecting a point.,,Requested by Nathan Gurney,,,Canfor
+Add scale limits to CSP Points,New,Add scale limits to control CSP Points visibility.,,"From April 7, 2025 demo discussion",,,Canfor
+Fix title block text in Print layout,Complete,Correct field mapping for title block text on print.,Resolved in current release.,Field mapping fix deployed,,,Canfor
+Remove report button from header,Complete,Remove report button from header bar.,Removed in latest build.,"Per April 7, 2025 update",,,Canfor
+Fix missing profile on startup,Complete,Ensure default profile loads at launch.,"Implemented in April 7, 2025 release.",Fix confirmed by Nate,,,Canfor
+Update Tract Picker Label,Complete,UI label on picker should read “Tract Navigation Options”,This change was confirmed and completed by dev team.,Requested by Forestry team to reflect correct nomenclature,,,Canfor

@@ -1,0 +1,54 @@
+Title,Status,Description,Expected Changes,Feature Request Response,General Notes,Estimate,Cost,Tags
+Rename 'Sales Navigation Options' to 'Tract Navigation Options',Complete,Terminology does not match WoodPro vocabulary.,Update label to 'Tract Navigation Options'.,Updated in UI by April 7 release.,Confirmed by Morgan Cameron,,,Canfor
+Fix title block text in Print layout,Complete,Print output had incorrect field mapping for title block.,Correct field mapping for title block text on print.,Resolved in current release.,Field mapping fix deployed,,,Canfor
+Remove report button from header,Complete,Header includes an unnecessary 'report' button.,Remove report button from header bar.,Removed in latest build.,"Per April 7, 2025 update",,,Canfor
+Fix missing profile on startup,Complete,Profile was not loading on application startup.,Ensure default profile loads at launch.,"Implemented in April 7, 2025 release.",Fix confirmed by Nathan Gurney,,,Canfor
+Add query definitions to navigation layers,New,Tract Points and Geometry Layers lack query filters.,Apply query definitions based on Navigation Options fields.,,Requested by Morgan Cameron,,,Canfor
+Simplify CSP Tract Points symbology,New,Symbols are too varied and hard to interpret.,"Use single symbol type, distinguish by company vs supplier.",,April 7 feedback,,,Canfor
+Enable multi-select for Location and Forester picklists,New,Currently limited to single selection in filters.,Allow users to select multiple values.,,Request from Morgan Cameron,,,Canfor
+Toggle layer visibility by symbol in TOC,New,TOC does not allow toggling visibility of unique value layers.,Enable toggling by unique symbol group in Table of Contents.,,Reported by Nathan Gurney,,,Canfor
+Create geometry from Report-All in Edit,New,No current function to create from Report-All result.,Add support for geometry creation from report-all query.,,Captured in release notes,,,Canfor
+Enable shape upload in Edit menu,New,Edit options do not currently support shape upload.,Allow shape file uploads directly via Edit panel.,,From April 7 demo notes,,,Canfor
+Change zoom level on point select,New,Selecting a point does not zoom in enough for detail.,Modify zoom level to be closer when selecting a point.,,Requested by Nathan Gurney,,,Canfor
+Add scale limits to CSP Points,New,CSP Points display too early on the scale range.,Add scale limits to control CSP Points visibility.,,"From April 7, 2025 demo discussion",,,Canfor
+center on / extent based on navigation ,New,,,,,,,WoodPro - Demo
+Download Format Clarifications,New,Ensure clarity on available download formats,"• Confirm that  Shapefile (.shp)  remains the only supported format for downloads.
+• Provide  clear documentation  that users can convert shapefiles to other formats using external tools.",,,,,ATFS - Stage (geoserver)
+Search Feature Improvements,New,Optimize the Search feature to encourage more usage,"• Increase  visibility and accessibility  of the Search tool in the UI.
+• Add  usage tracking  (if possible) to evaluate actual adoption and effectiveness.
+• Provide  in-app guidance or a short tutorial  to highlight its availability and benefits.",,,,,ATFS - Stage (geoserver)
+Upload Function Retention & Enhancements,New,Ensure the Upload feature remains available and improve ease of use,Maintain  upload functionality  as users rely on it.Enhance  user guidance or tooltips  to improve adoption and reduce the need for support inquiries.,,,,,ATFS - Stage (geoserver)
+Basemap Selection Optimization,New,Add new Basemap,Add USGS National Map (Topo),,,,,ATFS - Stage (geoserver)
+Acreage Tracking ,New,Enhance the Editor to provide more accurate acreage tracking to reduce audit discrepancies,"• Enable  point-based acreage validation  within the Editor to improve alignment with enrollment standards.
+• Develop an  official mapped acreage reference layer  to be the primary source of truth for acreage, reducing reliance on third-party plans.",,,,,ATFS - Stage (geoserver)
+Print Map functionality (layout),New,Improve  layout options  for better formatting and presentation,Will need to discuss,,,,,ATFS - Stage (geoserver)
+"Print Map functionality (map framing, selection box)",New,Enhance  map framing  by allowing users to  drag a selection box  to define the area of interest (AOI) instead of the current clunky method.,Will need to discuss,,,,,ATFS - Stage (geoserver)
+Print Map functionality (remove from editor),New,• Move the Print Map feature to the  Viewer only  (remove from the Editor).,Will need to discuss,,,,,ATFS - Stage (geoserver)
+Plot Location - Not saved to markup,New,should be able to export timber cruise plot tool for export. points are not exported out as lat / long.,,,,,,WoodPro - Demo
+Rainfall background opacity,New,When viewing rainfall amounts in the legend is visible opacity of the background changes sufficiently to obfuscate data when viewed against the legend.,"Legend, when displayed should not change opacity of background. Potentially, including legend as a fixed region on the screen, and not a window or within the side bar itself.",,,,,WoodPro - Demo
+Results panel - Display,New,Field aliases should be used when data is listed in the Results panel.,,,,,,WoodPro - Demo
+symbology and labeling,New,"improve symbology and labeling so they are more easily visible.  The black, dark, small, etc. is so hard to see, especially if using the darker imagery.",,,,,,WoodPro - Demo
+iOS and android app,New,App Store branded app which logs in and displays woodpro in default mobile browser ,,,,,,WoodPro - Demo
+Print selected feature only,New,Ability to select single poly for printing when multiple polys are visible on map,,,,,,WoodPro - Demo
+Increase line road width,New,"Road lines are difficult to see.  Ability for user to increase road width 1pt 2pt 3pt etc, or generally increase road width to 2pt to enhance visibility. ",,,,,,WoodPro - Demo
+Turn off Basemaps entirely,New,Provide toggle / ability for user to turn off all underlying basemap layers,,,,,,WoodPro - Demo
+Search bar could include all variables not just tract name?,Reviewed,,,"which search? the quick select navigation dropbox can include any field you want, but all fields would be tool many
+the top quick navigation tool isn’t a search tool, all data is loaded client-side, use of autocomplete might feel like search",,,,WoodPro - Demo
+Bids,Reviewed,Multi-row input form is not clear. Potential rearrangement to vertical arrangement  or otherwise label each field,,"bids and inventory grids vary by client, use of grid was a short-cut
+for some clients, some fields are calculated, not used for data entry
+I think the 3-row version is more complicated then the 2-row version, but doesn’t give much space for a comment field",,,,WoodPro - Demo
+Jasper Reports,Reviewed,Column sort possible? ,,"I do not know, I don’t have jasper reports on local dev
+answer may depend on the jasper output, csv - yes, pdf - no",,,,WoodPro - Demo
+Map to include qr code link to avenza?,Reviewed,,QR code to provide Google / Apple maps x/y navigation link,"print page is a Pro page layout, can easily add images to title block
+what would this qr code say or do?",,,,WoodPro - Demo
+Add mill name label option for clarity,Reviewed,"Add toggle to view mill at much greater zoom level. 1:1,000,000 to 1:5,000,000?",,mills are already labeled,,,,WoodPro - Demo
+Remove waypoint markers,Reviewed,No way to remove waypoint markers?,,"correct, no way to remove markers one at a time, close and reopen panel will clear them all",,,,WoodPro - Demo
+Routing - Export Directions,Reviewed,"1. Save the finalized route as part of the project or export it in a printable format.
+2. Use the Print tool in the Quick Access Toolbar to generate a map or detailed directions in PDF format.",,"the route tool doesn’t create travel directions, purpose was to calculate time and distance, the route line is a QC check
+is this an issue or a feature request?",,,,WoodPro - Demo
+Routing - Clear Button,Reviewed,"
+• [ ]  Create ‘Clear Button’ to clear routing instead of clicking out of routing toolbox
+close and reopen the panel",,,,,,WoodPro - Demo
+Routing - Recalculate,Reviewed,"• [ ]  Add ‘Recalculate Button’
+run the tool again",,,,,,WoodPro - Demo
+Routing - Clear / Edit,Reviewed,"to clear - close the panel, there is no edit, but you can run the tool again to create a different route",,,,,,WoodPro - Demo
