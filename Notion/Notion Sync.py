@@ -179,6 +179,7 @@ def notion_to_csv():
     - Cost
     - Feature Request Response
     - Tags
+    - Ranking
     
     Returns:
         None
@@ -244,7 +245,8 @@ def notion_to_csv():
             "Estimate": safe_rich_text(props, "Estimate"),
             "Cost": safe_rich_text(props, "Cost"),
             "Feature Request Response": safe_rich_text(props, "Feature request response"),
-            "Tags": ", ".join(t.get("name") for t in props.get("Tags", {}).get("multi_select", []))
+            "Tags": ", ".join(t.get("name") for t in props.get("Tags", {}).get("multi_select", [])),
+            "Ranking": safe_rich_text(props, "Ranking")
         })
 
     pd.DataFrame(backup).to_csv(BACKUP_FILE, index=False)
@@ -519,7 +521,8 @@ def spreadsheet_to_notion(file_path):
             "General Notes": "General Notes",
             "Estimate": "Estimate",
             "Cost": "Cost",
-            "Feature Request Response": "Feature request response"
+            "Feature Request Response": "Feature request response",
+            "Ranking": "Ranking"
         }
 
         for csv_field, notion_field in rich_text_fields.items():

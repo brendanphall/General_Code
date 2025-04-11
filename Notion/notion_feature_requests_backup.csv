@@ -1,0 +1,64 @@
+#,Title,Status,Priority,Expected Changes,General Notes,Estimate,Cost,Feature Request Response,Tags
+16,Add scale limits to CSP Points,Rejected,Medium,Add scale limits to control CSP Points visibility.,"From April 7, 2025 demo discussion",,,"cancelled, on Apr-8, Morgan said ÒKeep points. Disable the display scale dependency for CSP layers. Show at all scales.
+
+They can turn the CSP layers off if not wanted to be shown when making a print map.Ó",Canfor
+20,Set extent at login,In Progress,Medium,Set initial display extent to the Location(s) set in Navigation Options,,,,,
+19,Fix missing profile on startup,Complete,Medium,Ensure default profile loads at launch.,Fix confirmed by Nate,,,done,Canfor
+18,Remove report button from header,Complete,Medium,Remove report button from header bar.,"Per April 7, 2025 update",,,done,Canfor
+17,Fix title block text in Print layout,Complete,Medium,Correct field mapping for title block text on print.,Field mapping fix deployed,,,done,Canfor
+15,Change zoom level on point select,Complete,Medium,Modify zoom level to be closer when selecting a point.,Requested by Nathan Gurney,,,done,Canfor
+14,Enable shape upload in Edit menu,Complete,Medium,Allow shape file uploads directly via Edit panel.,From April 7 demo notes,,,done,Canfor
+12,Toggle layer visibility by symbol in TOC,Complete,Medium,Enable toggling by unique symbol group in Table of Contents.,Reported by Nate,,,"Add layer visibility on/off to the unique value renderere layers, done",Canfor
+11,Enable multi-select for Location and Forester picklists,Complete,Medium,Allow users to select multiple values.,Request from Morgan,,,"in nav-options dialog, replace filter-select with multi-select, done",Canfor
+10,Simplify CSP Tract Points symbology,Complete,Medium,"Use single symbol type, distinguish by company vs supplier.",April 7 feedback,,,"on tract points layers, replace unique value renderer with simple point renderer, done",Canfor
+9,Add query definitions to navigation layers,Complete,Medium,Apply query definitions based on Navigation Options fields.,Requested by Morgan,,,"set query def using nav-options on tract point layers, done",Canfor
+7,Rename 'Sales Navigation Options' to 'Tract Navigation Options',Complete,Medium,"UI label should reflect ""Tract Navigation Options"" in picker and TOC",Requested by multiple stakeholders,,,done,Canfor
+13,Create geometry from Report-All in Edit,In Progress,Medium,Add support for geometry creation from report-all query.,Captured in release notes,,,In-progress,Canfor
+31,Edit Symbology of CSP,New,Low,"Unsure, placeholder suggestion.",,,,,Canfor
+30,Keep Point Visible at all zoom levels,New,Medium,"Currently points are hidden at lower zoom levels, keep them visible at all zoom levels.",Cleans up UX for polygons of different sizes and relative zoom level for hiding points.,,,,Canfor
+29,Chage 'Edit Geometry' button when Point Geom exists,New,Medium,Update form with clear button lable to incldue 'Add Geometry' if Point geom. Exists,"Cleans up UX in form for creating geometery if only point gemoetry exists. Currently states 'Edit' Geom, when only point exits, and X/Y is not going to be edited. Misleading button.",,,,Canfor
+28,Replace or Append geometry,New,Medium,Ability for user to select geometry and Replace OR Append to tract,"Need to clarify if we are adding 1 at a time, or a limit on multiples. Say 5 at a time. OR are these being appended to existing, which would be 1 at a time. Confirm if user error before proceeding. Will merge multi-part? Append parcels or replace?",,,,Canfor
+27,Download Timber Cruise Data,New,Low,Add ability for user to download timber cruise plot data,"Geocoded points, polygon boundary in .shp or similar format",,,,Canfor
+26,Download Markup,New,Low,User to download markup(s),"Which markup to download, 'markup data ->shapefile'",,,,Canfor
+25,Select multiple parcels to copy to tract geometry,New,Low,Enable multi-selection of parcels to define tract geometry. Define whether this should be the default behavior.,Should a confirmation popup appear? Is this limited to reports or all use cases?,,,,Canfor
+24,Export plot location points to shapefile,New,Low,Enable shapefile export of cruise plot locations. Determine which plot points are referred toÑmarkup vs. cruise plots?,Currently cruise plots can be saved to markup. Confirm intent for shapefile export from markup.,,,,Canfor
+23,Export marker data to shapefile,New,Low,Allow exporting of marker data layers.,"Need clarification: Is this CSP tract point data or markup data? Purpose for shapefile export?  Clarify what ÒmarkerÓ data refers to: text, points, lines, polygons? Ask for intended use case.",,,,Canfor
+22,File Type Download options,New,Medium,CSV file type needs to be removed,Clean up actual filetypes to be downloadeed,,,,Canfor
+21,Landing Page redirect,New,Medium,"Landing page should redirect to Map, not Map / Report Center page",General UX at login,,,,Canfor
+3,Show Label on Geom. Select,New,Medium,After any geometery is selcted 'Tract Name' field shows in 'Edit Sales' toolbox to confirm to user what is being edited,Expected to reduce time spent identifying tracts in field,,,"new?, show what field as label (I may not have copied the field), shown on what type of feature? (tract points?, tract polygons?, other?)",Canfor
+,center on / extent based on navigation ,New,,,,,,,WoodPro - Demo
+,Download Format Clarifications,New,,"• Confirm that  Shapefile (.shp)  remains the only supported format for downloads.
+• Provide  clear documentation  that users can convert shapefiles to other formats using external tools.",,,,,ATFS - Stage (geoserver)
+,Search Feature Improvements,New,,"• Increase  visibility and accessibility  of the Search tool in the UI.
+• Add  usage tracking  (if possible) to evaluate actual adoption and effectiveness.
+• Provide  in-app guidance or a short tutorial  to highlight its availability and benefits.",,,,,ATFS - Stage (geoserver)
+,Upload Function Retention & Enhancements,New,,Maintain  upload functionality  as users rely on it.Enhance  user guidance or tooltips  to improve adoption and reduce the need for support inquiries.,,,,,ATFS - Stage (geoserver)
+,Basemap Selection Optimization,New,,Add USGS National Map (Topo),,,,,ATFS - Stage (geoserver)
+,Acreage Tracking ,New,,"• Enable  point-based acreage validation  within the Editor to improve alignment with enrollment standards.
+• Develop an  official mapped acreage reference layer  to be the primary source of truth for acreage, reducing reliance on third-party plans.",,,,,ATFS - Stage (geoserver)
+,Print Map functionality (layout),New,,Will need to discuss,,,,,ATFS - Stage (geoserver)
+,"Print Map functionality (map framing, selection box)",New,,Will need to discuss,,,,,ATFS - Stage (geoserver)
+,Plot Location - Not saved to markup,New,,,,,,,WoodPro - Demo
+,Rainfall background opacity,New,,"Legend, when displayed should not change opacity of background. Potentially, including legend as a fixed region on the screen, and not a window or within the side bar itself.",,,,,WoodPro - Demo
+,Results panel - Display,New,,,,,,,WoodPro - Demo
+,symbology and labeling,New,,,,,,,WoodPro - Demo
+,iOS and android app,New,,,,,,,WoodPro - Demo
+,Print selected feature only,New,,,,,,,WoodPro - Demo
+,Increase line road width,New,,,,,,,WoodPro - Demo
+,Turn off Basemaps entirely,New,,,,,,,WoodPro - Demo
+,Search bar could include all variables not just tract name?,Reviewed,,,,,,"which search? the quick select navigation dropbox can include any field you want, but all fields would be tool many
+the top quick navigation tool isn’t a search tool, all data is loaded client-side, use of autocomplete might feel like search",WoodPro - Demo
+,Bids,Reviewed,,,,,,"bids and inventory grids vary by client, use of grid was a short-cut
+for some clients, some fields are calculated, not used for data entry
+I think the 3-row version is more complicated then the 2-row version, but doesn’t give much space for a comment field",WoodPro - Demo
+,Jasper Reports,Reviewed,,,,,,"I do not know, I don’t have jasper reports on local dev
+answer may depend on the jasper output, csv - yes, pdf - no",WoodPro - Demo
+,Map to include qr code link to avenza?,Reviewed,,QR code to provide Google / Apple maps x/y navigation link,,,,"print page is a Pro page layout, can easily add images to title block
+what would this qr code say or do?",WoodPro - Demo
+,Add mill name label option for clarity,Reviewed,,,,,,mills are already labeled,WoodPro - Demo
+,Remove waypoint markers,Reviewed,,,,,,"correct, no way to remove markers one at a time, close and reopen panel will clear them all",WoodPro - Demo
+,Routing - Export Directions,Reviewed,,,,,,"the route tool doesn’t create travel directions, purpose was to calculate time and distance, the route line is a QC check
+is this an issue or a feature request?",WoodPro - Demo
+,Routing - Clear Button,Reviewed,,,,,,,WoodPro - Demo
+,Routing - Recalculate,Reviewed,,,,,,,WoodPro - Demo
+,Routing - Clear / Edit,Reviewed,,,,,,,WoodPro - Demo
