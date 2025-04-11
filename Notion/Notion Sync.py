@@ -1,3 +1,25 @@
+"""
+Notion Sync Tool
+
+A Python utility for bidirectional synchronization between Notion databases and spreadsheet files.
+This module provides functionality to export data from Notion to CSV files and import data from
+spreadsheets (CSV, Excel, ODS) into Notion databases.
+
+The tool uses smart matching with Group_ID as the primary key (falling back to Title if needed)
+and includes intelligent handling of various data types and validation.
+
+Example:
+    >>> from notion_sync import run_sync
+    >>> run_sync("1")  # Export Notion to CSV
+    >>> run_sync("2", "data.csv")  # Import CSV to Notion
+
+Dependencies:
+    - notion-client: For interacting with the Notion API
+    - pandas: For data manipulation and CSV handling
+    - openpyxl/odfpy: For Excel/ODS file support
+    - ipywidgets: For Jupyter notebook UI (optional)
+"""
+
 from notion_client import Client
 import pandas as pd
 import time
@@ -14,7 +36,23 @@ notion = Client(auth=NOTION_TOKEN)
 
 
 def text_block(text):
-    """Create a rich text block for Notion properties."""
+    """
+    Create a rich text block for Notion properties.
+    
+    Args:
+        text: The text content to convert to a Notion rich text block.
+             Can be None, empty string, or any value that can be converted to string.
+    
+    Returns:
+        list: A list containing a single rich text block dictionary, or an empty list
+              if the input is None or empty.
+    
+    Example:
+        >>> text_block("Hello World")
+        [{'type': 'text', 'text': {'content': 'Hello World'}}]
+        >>> text_block(None)
+        []
+    """
     # Convert to string and ensure it's not None/empty
     if text is None:
         return []
@@ -27,6 +65,22 @@ def text_block(text):
 
 
 def safe_rich_text(props, field):
+    """
+    Safely extract rich text content from Notion properties.
+    
+    Args:
+        props (dict): The properties dictionary from a Notion page.
+        field (str): The name of the field to extract.
+    
+    Returns:
+        str: The concatenated plain text content of the rich text field,
+             or an empty string if the field doesn't exist or has no content.
+    
+    Example:
+        >>> props = {"Description": {"rich_text": [{"plain_text": "Hello"}, {"plain_text": "World"}]}}
+        >>> safe_rich_text(props, "Description")
+        'Hello World'
+    """
     try:
         return " ".join([r["plain_text"] for r in props.get(field, {}).get("rich_text", [])])
     except Exception:
@@ -34,12 +88,41 @@ def safe_rich_text(props, field):
 
 
 def safe_select(props, field):
+    """
+    Safely extract select value from Notion properties.
+    
+    Args:
+        props (dict): The properties dictionary from a Notion page.
+        field (str): The name of the field to extract.
+    
+    Returns:
+        str: The name of the selected option, or an empty string if no option is selected.
+    
+    Example:
+        >>> props = {"Priority": {"select": {"name": "High"}}}
+        >>> safe_select(props, "Priority")
+        'High'
+    """
     select_value = props.get(field, {}).get("select")
     return select_value.get("name") if select_value else ""
 
 
 def safe_status(props, field):
-    """Safely extract status value from Notion properties."""
+    """
+    Safely extract status value from Notion properties.
+    
+    Args:
+        props (dict): The properties dictionary from a Notion page.
+        field (str): The name of the field to extract.
+    
+    Returns:
+        str: The name of the status, or an empty string if no status is set.
+    
+    Example:
+        >>> props = {"Status": {"status": {"name": "In Progress"}}}
+        >>> safe_status(props, "Status")
+        'In Progress'
+    """
     try:
         status_value = props.get(field, {}).get("status")
         if status_value:
@@ -51,6 +134,20 @@ def safe_status(props, field):
 
 
 def fetch_notion_pages():
+    """
+    Fetch all pages from the configured Notion database.
+    
+    This function handles pagination automatically, fetching all pages
+    from the database specified by DATABASE_ID.
+    
+    Returns:
+        list: A list of all page objects from the database.
+    
+    Example:
+        >>> pages = fetch_notion_pages()
+        >>> print(f"Found {len(pages)} pages")
+        Found 42 pages
+    """
     pages = []
     start_cursor = None
     while True:
@@ -63,11 +160,39 @@ def fetch_notion_pages():
 
 
 def notion_to_csv():
+    """
+    Export data from Notion to a CSV file.
+    
+    This function fetches all pages from the configured Notion database,
+    extracts their properties, and saves them to a CSV file specified by
+    BACKUP_FILE. The function handles various property types including
+    rich text, select, status, and multi-select fields.
+    
+    The exported CSV will have the following columns:
+    - # (Group_ID)
+    - Title
+    - Status
+    - Priority
+    - Expected Changes
+    - General Notes
+    - Estimate
+    - Cost
+    - Feature Request Response
+    - Tags
+    
+    Returns:
+        None
+    
+    Example:
+        >>> notion_to_csv()
+        📥 Exporting Notion → CSV...
+        ✅ Notion data exported to `notion_feature_requests_backup.csv`
+    """
     print("📥 Exporting Notion → CSV...")
     pages = fetch_notion_pages()
     notion_lookup = {}
     
-    # Create lookup by Group_ID instead of Title
+    # Create lookup by composite key (Group_ID + Tags) instead of just Group_ID
     for page in pages:
         props = page.get("properties", {})
         group_id = ""
@@ -76,11 +201,19 @@ def notion_to_csv():
             if group_id_prop.get("type") == "rich_text" and group_id_prop.get("rich_text"):
                 group_id = " ".join([r["plain_text"] for r in group_id_prop["rich_text"]])
         
-        # Only add to lookup if Group_ID exists
-        if group_id:
-            notion_lookup[group_id] = page
+        # Get Tags
+        tags = []
+        if "Tags" in props and props["Tags"].get("type") == "multi_select":
+            tags = [t.get("name", "") for t in props["Tags"].get("multi_select", [])]
+        
+        # Create composite key
+        composite_key = f"{group_id}|{','.join(sorted(tags))}" if group_id and tags else ""
+        
+        # Only add to lookup if composite key exists
+        if composite_key:
+            notion_lookup[composite_key] = page
         else:
-            # For backward compatibility, also store by Title if no Group_ID
+            # For backward compatibility, also store by Title if no composite key
             if "Title" in props and props["Title"].get("title"):
                 title = props["Title"]["title"][0]["plain_text"]
                 notion_lookup[title] = page
@@ -119,7 +252,32 @@ def notion_to_csv():
 
 
 def load_spreadsheet(file_path):
-    """Load data from various spreadsheet formats."""
+    """
+    Load data from various spreadsheet formats.
+    
+    This function supports CSV, Excel (.xls, .xlsx), and ODS files.
+    It handles encoding issues by trying multiple encodings (UTF-8, ISO-8859-1, latin1)
+    and performs data cleaning by removing unnamed columns and fully empty rows.
+    
+    Args:
+        file_path (str): Path to the spreadsheet file.
+    
+    Returns:
+        pandas.DataFrame: The loaded and processed data.
+    
+    Raises:
+        ValueError: If the file format is unsupported or required columns are missing.
+        FileNotFoundError: If the file doesn't exist.
+    
+    Example:
+        >>> data = load_spreadsheet("data.csv")
+        📄 Loading spreadsheet from: data.csv
+        ✅ Loaded 42 rows using UTF-8.
+        >>> print(data.head())
+        #  Title  Status  Priority  ...
+        1  Feature 1  In Progress  High  ...
+        2  Feature 2  New  Medium  ...
+    """
     print(f"📄 Loading spreadsheet from: {file_path}")
     ext = os.path.splitext(file_path)[1].lower()
 
@@ -213,6 +371,40 @@ def load_spreadsheet(file_path):
 
 
 def spreadsheet_to_notion(file_path):
+    """
+    Import data from a spreadsheet file into a Notion database.
+    
+    This function loads data from a spreadsheet file, cleans it up,
+    and syncs it with the configured Notion database. It uses a composite key
+    of Group_ID and Tags as the primary key for matching rows to existing pages,
+    falling back to Title if the composite key is not available.
+    
+    Args:
+        file_path (str): Path to the spreadsheet file (CSV, Excel, or ODS).
+    
+    Returns:
+        None
+    
+    Raises:
+        FileNotFoundError: If the specified file doesn't exist.
+        ValueError: If the file format is unsupported or required columns are missing.
+    
+    Example:
+        >>> spreadsheet_to_notion("data.csv")
+        📤 Importing Spreadsheet → Notion...
+        📄 Loading spreadsheet from: data.csv
+        ✅ Loaded 42 rows using UTF-8.
+        ✅ Removed empty rows, 40 rows remaining
+        📚 Found 35 existing pages in Notion
+        ✅ Found valid status options: New, In Progress, Done, Rejected
+        🔄 Processing 40 rows...
+        🔄 Progress: 10/40 rows processed
+        🔄 Progress: 20/40 rows processed
+        🔄 Progress: 30/40 rows processed
+        🔄 Progress: 40/40 rows processed
+        ✅ All 40 rows were processed
+        ✅ Spreadsheet Sync Done: 5 created, 35 updated, 0 skipped.
+    """
     print("📤 Importing Spreadsheet → Notion...")
     
     if not os.path.isfile(file_path):
@@ -235,7 +427,7 @@ def spreadsheet_to_notion(file_path):
     pages = fetch_notion_pages()
     notion_lookup = {}
     
-    # Create lookup by Group_ID instead of Title
+    # Create lookup by composite key (Group_ID + Tags) instead of just Group_ID
     for page in pages:
         props = page.get("properties", {})
         group_id = ""
@@ -244,11 +436,19 @@ def spreadsheet_to_notion(file_path):
             if group_id_prop.get("type") == "rich_text" and group_id_prop.get("rich_text"):
                 group_id = " ".join([r["plain_text"] for r in group_id_prop["rich_text"]])
         
-        # Only add to lookup if Group_ID exists
-        if group_id:
-            notion_lookup[group_id] = page
+        # Get Tags
+        tags = []
+        if "Tags" in props and props["Tags"].get("type") == "multi_select":
+            tags = [t.get("name", "") for t in props["Tags"].get("multi_select", [])]
+        
+        # Create composite key
+        composite_key = f"{group_id}|{','.join(sorted(tags))}" if group_id and tags else ""
+        
+        # Only add to lookup if composite key exists
+        if composite_key:
+            notion_lookup[composite_key] = page
         else:
-            # For backward compatibility, also store by Title if no Group_ID
+            # For backward compatibility, also store by Title if no composite key
             if "Title" in props and props["Title"].get("title"):
                 title = props["Title"]["title"][0]["plain_text"]
                 notion_lookup[title] = page
@@ -293,8 +493,16 @@ def spreadsheet_to_notion(file_path):
         if "Group_ID" in row and pd.notna(row["Group_ID"]) and str(row["Group_ID"]).strip():
             group_id = str(row["Group_ID"]).strip()
         
-        # Use Group_ID as primary key if available, otherwise fall back to Title
-        identifier = group_id if group_id else title
+        # Get Tags if they exist
+        tags = []
+        if "Tags" in row and pd.notna(row["Tags"]) and str(row["Tags"]).strip():
+            tags = [t.strip() for t in str(row["Tags"]).split(",") if t.strip()]
+        
+        # Create composite key
+        composite_key = f"{group_id}|{','.join(sorted(tags))}" if group_id and tags else None
+        
+        # Use composite key as primary key if available, otherwise fall back to Title
+        identifier = composite_key if composite_key else title
         existing = notion_lookup.get(identifier)
         
         properties = {
@@ -392,6 +600,23 @@ def spreadsheet_to_notion(file_path):
 
 # 🧠 Main Entry
 def run_sync(choice, file_path=None):
+    """
+    Run the Notion sync operation based on user choice.
+    
+    Args:
+        choice (str): The operation to perform.
+                     "1" for exporting Notion to CSV.
+                     "2" for importing a spreadsheet to Notion.
+        file_path (str, optional): Path to the spreadsheet file for import.
+                                  Required when choice is "2".
+    
+    Returns:
+        None
+    
+    Example:
+        >>> run_sync("1")  # Export Notion to CSV
+        >>> run_sync("2", "data.csv")  # Import CSV to Notion
+    """
     if choice == "1":
         notion_to_csv()
     elif choice == "2":
@@ -404,6 +629,16 @@ def run_sync(choice, file_path=None):
 
 
 def is_running_in_notebook():
+    """
+    Check if the code is running in a Jupyter notebook.
+    
+    Returns:
+        bool: True if running in a notebook, False otherwise.
+    
+    Example:
+        >>> is_running_in_notebook()
+        False
+    """
     try:
         from IPython import get_ipython
         return get_ipython() is not None
@@ -412,6 +647,22 @@ def is_running_in_notebook():
 
 
 def launch_interface():
+    """
+    Launch the appropriate interface based on the environment.
+    
+    If running in a Jupyter notebook, launches an interactive widget UI.
+    Otherwise, launches a command-line interface.
+    
+    Returns:
+        None
+    
+    Example:
+        >>> launch_interface()
+        🔁 Notion Sync Utility
+        1 - Export Notion → CSV
+        2 - Import Spreadsheet → Notion
+        Select an option (1 or 2):
+    """
     if is_running_in_notebook():
         from ipywidgets import Dropdown, Button, VBox, Output, HBox, Text
         from IPython.display import display
