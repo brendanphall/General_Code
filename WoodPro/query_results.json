@@ -1,0 +1,131 @@
+[
+    {
+        "report_location": "AXI",
+        "count": 119,
+        "retrieved": 119,
+        "time": "1,761 ms",
+        "success": true
+    },
+    {
+        "report_location": "CAM",
+        "error": "HTTPSConnectionPool(host='maps.canfor.com', port=443): Read timed out. (read timeout=60)",
+        "success": false
+    },
+    {
+        "report_location": "CON",
+        "error": "HTTPSConnectionPool(host='maps.canfor.com', port=443): Read timed out. (read timeout=60)",
+        "success": false
+    },
+    {
+        "report_location": "CRO",
+        "count": 29,
+        "retrieved": 29,
+        "time": "1,417 ms",
+        "success": true
+    },
+    {
+        "report_location": "DAR",
+        "count": 516,
+        "retrieved": 516,
+        "time": "25,389 ms",
+        "success": true
+    },
+    {
+        "report_location": "DER",
+        "count": 160,
+        "retrieved": 160,
+        "time": "2,293 ms",
+        "success": true
+    },
+    {
+        "report_location": "EST-L",
+        "count": 419,
+        "retrieved": 419,
+        "time": "17,362 ms",
+        "success": true
+    },
+    {
+        "report_location": "EST-S",
+        "count": 194,
+        "retrieved": 194,
+        "time": "3,372 ms",
+        "success": true
+    },
+    {
+        "report_location": "FUL",
+        "count": 913,
+        "retrieved": 913,
+        "time": "27,897 ms",
+        "success": true
+    },
+    {
+        "report_location": "GRA",
+        "count": 734,
+        "retrieved": 734,
+        "time": "45,555 ms",
+        "success": true
+    },
+    {
+        "report_location": "HER",
+        "count": 190,
+        "retrieved": 190,
+        "time": "3,263 ms",
+        "success": true
+    },
+    {
+        "report_location": "IRO",
+        "count": 105,
+        "retrieved": 105,
+        "time": "1,697 ms",
+        "success": true
+    },
+    {
+        "report_location": "JAC",
+        "count": 204,
+        "retrieved": 204,
+        "time": "6,582 ms",
+        "success": true
+    },
+    {
+        "report_location": "LAT",
+        "count": 17,
+        "retrieved": 17,
+        "time": "1,533 ms",
+        "success": true
+    },
+    {
+        "report_location": "MLT",
+        "count": 551,
+        "retrieved": 551,
+        "time": "14,692 ms",
+        "success": true
+    },
+    {
+        "report_location": "MOB",
+        "count": 257,
+        "retrieved": 257,
+        "time": "8,789 ms",
+        "success": true
+    },
+    {
+        "report_location": "THM",
+        "count": 322,
+        "retrieved": 322,
+        "time": "9,229 ms",
+        "success": true
+    },
+    {
+        "report_location": "URB",
+        "count": 486,
+        "retrieved": 486,
+        "time": "12,031 ms",
+        "success": true
+    },
+    {
+        "report_location": "WDC",
+        "count": 6,
+        "retrieved": 6,
+        "time": "1,341 ms",
+        "success": true
+    }
+]
