@@ -1,0 +1,31 @@
+#!/bin/zsh
+
+URL="https://maps.canfor.com/arcgis/rest/services/CSPWoodpro/WoodPro_NSApps_DB_Views/MapServer/3/query"
+FIELDS="report_location,Tract_Name,tract_status_desc,Forester,tract_type_family,SaleType,latitude_dd,longitude_dd,Wthr_grd,PurchDate,harvest_status"
+
+
+LOCATIONS=("AXI" "CAM" "CON" "CRO" "DAR" "DER" "EST-L" "EST-S" "FUL" "GRA" "HER" "IRO" "JAC" "LAT" "MLT" "MOB" "THM" "URB" "WDC")
+
+echo -e "results:\n"
+
+for LOC in "${LOCATIONS[@]}"; do
+  START=$(($(date +%s%N) / 1000000))
+
+  RESPONSE=$(curl -sG "$URL" \
+    --data-urlencode "where=UPPER(report_location)='$LOC'" \
+    --data-urlencode "outFields=$FIELDS" \
+    --data-urlencode "returnGeometry=false" \
+    --data-urlencode "resultRecordCount=2000" \
+    --data-urlencode "cacheHint=true" \
+    --data-urlencode "f=json")
+
+  COUNT=$(echo "$RESPONSE" | jq '.features | length' 2>/dev/null)
+  if [[ -z "$COUNT" || "$COUNT" == "null" ]]; then
+    COUNT=$(echo "$RESPONSE" | grep -o '"attributes"' | wc -l | tr -d ' ')
+  fi
+
+  END=$(($(date +%s%N) / 1000000))
+  DURATION=$((END - START))
+
+  printf '    { "report_location": "%-5s", "count": %4s, "time": "%7s ms" },\n' "$LOC" "$COUNT" "$DURATION"
+done

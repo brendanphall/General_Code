@@ -1,0 +1,13 @@
+Title,Status,Description,Expected Changes,Feature Request Response,General Notes,Tags
+Add scale limits to CSP Points,New,CSP Points display too early on the scale range.,Add scale limits to control CSP Points visibility.,,"From April 7, 2025 demo discussion",Canfor
+Change zoom level on point select,New,Selecting a point does not zoom in enough for detail.,Modify zoom level to be closer when selecting a point.,,Requested by Nathan Gurney,Canfor
+Fix missing profile on startup,Complete,Profile was not loading on application startup.,Ensure default profile loads at launch.,"Implemented in April 7, 2025 release.",Fix confirmed by Nathan Gurney,Canfor
+Remove report button from header,Complete,Header includes an unnecessary 'report' button.,Remove report button from header bar.,Removed in latest build.,"Per April 7, 2025 update",Canfor
+Fix title block text in Print layout,Complete,Print output had incorrect field mapping for title block.,Correct field mapping for title block text on print.,Resolved in current release.,Field mapping fix deployed,Canfor
+Enable shape upload in Edit menu,New,Edit options do not currently support shape upload.,Allow shape file uploads directly via Edit panel.,,From April 7 demo notes,Canfor
+Create geometry from Report-All in Edit,New,No current function to create from Report-All result.,Add support for geometry creation from report-all query.,,Captured in release notes,Canfor
+Toggle layer visibility by symbol in TOC,New,TOC does not allow toggling visibility of unique value layers.,Enable toggling by unique symbol group in Table of Contents.,,Reported by Nathan Gurney,Canfor
+Rename 'Sales Navigation Options' to 'Tract Navigation Options',Complete,Terminology does not match WoodPro vocabulary.,Update label to 'Tract Navigation Options'.,Updated in UI by April 7 release.,Confirmed by Morgan Cameron,Canfor
+Enable multi-select for Location and Forester picklists,New,Currently limited to single selection in filters.,Allow users to select multiple values.,,Request from Morgan Cameron,Canfor
+Simplify CSP Tract Points symbology,New,Symbols are too varied and hard to interpret.,"Use single symbol type, distinguish by company vs supplier.",,April 7 feedback,Canfor
+Add query definitions to navigation layers,New,Tract Points and Geometry Layers lack query filters.,Apply query definitions based on Navigation Options fields.,,Requested by Morgan Cameron,Canfor
