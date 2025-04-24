@@ -2,113 +2,33 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74759,
-      "Tract_Name": "Deepcreek Flat Branch",
+      "report_tract_no": 73244,
+      "Tract_Name": "Tipton West",
       "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
+      "Forester": "Tyler Mangum",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 30.9042,
-      "longitude_dd": -88.9137,
-      "Wthr_grd": "B",
-      "PurchDate": 1739336400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74840,
-      "Tract_Name": "Paardeberg 2025",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 31.0037,
-      "longitude_dd": -88.1329,
-      "Wthr_grd": "B",
-      "PurchDate": 1739854800000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73342,
-      "Tract_Name": "Howard Scott 24-01",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 31.4347,
-      "longitude_dd": -88.4206,
-      "Wthr_grd": "C",
-      "PurchDate": 1728014400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74326,
-      "Tract_Name": "Altmayer Boothetown Road",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 30.95264,
-      "longitude_dd": -88.40019,
+      "latitude_dd": 30.8575,
+      "longitude_dd": -88.5115,
       "Wthr_grd": "A",
-      "PurchDate": 1736917200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75030,
-      "Tract_Name": "Altmayer River",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 31.00365,
-      "longitude_dd": -88.39089,
-      "Wthr_grd": "B",
-      "PurchDate": 1741665600000,
+      "PurchDate": 1728532800000,
       "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75295,
-      "Tract_Name": "Carpenter/Webb",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.6515,
-      "longitude_dd": -88.7904,
-      "Wthr_grd": "B",
-      "PurchDate": 1743480000000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74879,
-      "Tract_Name": "Jordan Trust 2025-01",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
+      "report_tract_no": 73245,
+      "Tract_Name": "Tipton East & West",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
       "tract_type_family": "Company",
       "SaleType": "Lump",
-      "latitude_dd": 31.49224,
-      "longitude_dd": -88.20289,
-      "Wthr_grd": "B",
-      "PurchDate": 1740027600000,
-      "harvest_status": "Started"
+      "latitude_dd": 30.8566,
+      "longitude_dd": -88.5119,
+      "Wthr_grd": "A",
+      "PurchDate": 1728532800000,
+      "harvest_status": "Complete"
     }
   },
   {
@@ -130,161 +50,241 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75284,
-      "Tract_Name": "MAJ Wildlife Trust",
+      "report_tract_no": 73340,
+      "Tract_Name": "Alton Scott 24-01",
       "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
+      "Forester": "Dustin Phillips",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 31.51541,
-      "longitude_dd": -88.16345,
+      "latitude_dd": 31.4182,
+      "longitude_dd": -88.4127,
       "Wthr_grd": "C",
-      "PurchDate": 1743739200000,
-      "harvest_status": "Not Started"
+      "PurchDate": 1728014400000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75288,
-      "Tract_Name": "MAJ Charitable Trust",
+      "report_tract_no": 73342,
+      "Tract_Name": "Howard Scott 24-01",
       "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
+      "Forester": "Dustin Phillips",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 31.52526,
-      "longitude_dd": -88.16345,
-      "Wthr_grd": "A",
-      "PurchDate": 1743739200000,
-      "harvest_status": "Not Started"
+      "latitude_dd": 31.4347,
+      "longitude_dd": -88.4206,
+      "Wthr_grd": "C",
+      "PurchDate": 1728014400000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73973,
-      "Tract_Name": "Matthews 24-4",
+      "report_tract_no": 73667,
+      "Tract_Name": "HENDERSON TF/Pittman HTF",
+      "tract_status_desc": "Complete",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.54318,
+      "longitude_dd": -88.66772,
+      "Wthr_grd": "B",
+      "PurchDate": 1730347200000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73668,
+      "Tract_Name": "Pearl River/Vice ",
+      "tract_status_desc": "Complete",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.47014,
+      "longitude_dd": -88.49839,
+      "Wthr_grd": "B",
+      "PurchDate": 1730347200000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73669,
+      "Tract_Name": "TIMBER RESOURCES/Duvall JT 1",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Henslee",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.83457,
+      "longitude_dd": -88.62827,
+      "Wthr_grd": "B",
+      "PurchDate": 1730433600000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73678,
+      "Tract_Name": "W. REYNOLDS/Andrew Williams",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.474354,
+      "longitude_dd": -88.415471,
+      "Wthr_grd": "C",
+      "PurchDate": 1730433600000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73679,
+      "Tract_Name": "Acacia/Stallworth",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.3504,
+      "longitude_dd": -88.3708,
+      "Wthr_grd": "C",
+      "PurchDate": 1730433600000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73680,
+      "Tract_Name": "BURGERWORLD/Vincent Odom",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.1693,
+      "longitude_dd": -88.2729,
+      "Wthr_grd": "C",
+      "PurchDate": 1730433600000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73697,
+      "Tract_Name": "TIMBER RESOURCES/W Ernest",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Henslee",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.63174,
+      "longitude_dd": -88.09708,
+      "Wthr_grd": "B",
+      "PurchDate": 1730782800000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73698,
+      "Tract_Name": "ACACIA/Steel Mill",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.1383,
+      "longitude_dd": -87.9845,
+      "Wthr_grd": "A",
+      "PurchDate": 1730782800000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73707,
+      "Tract_Name": "Southeast L&T/Evelyn Stanley",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.0806,
+      "longitude_dd": -87.6355,
+      "Wthr_grd": "A",
+      "PurchDate": 1730782800000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73714,
+      "Tract_Name": "Southeast L&T/Lineberry",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.1964,
+      "longitude_dd": -87.7882,
+      "Wthr_grd": "C",
+      "PurchDate": 1730782800000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73727,
+      "Tract_Name": "BURGERWORLD/Kolb",
       "tract_status_desc": "Active",
       "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.0479,
+      "longitude_dd": -87.679,
+      "Wthr_grd": "C",
+      "PurchDate": 1730869200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73743,
+      "Tract_Name": "Camp Tiak",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
       "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 31.1994,
-      "longitude_dd": -87.6557,
+      "SaleType": "Unit",
+      "latitude_dd": 30.92746,
+      "longitude_dd": -89.170909,
       "Wthr_grd": "A",
-      "PurchDate": 1733115600000,
-      "harvest_status": "Started"
+      "PurchDate": 1731301200000,
+      "harvest_status": "Complete"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74975,
-      "Tract_Name": "Tamarack Summit Road",
-      "tract_status_desc": "Active",
-      "Forester": "Ryan Mattei",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.18057,
-      "longitude_dd": -88.17286,
-      "Wthr_grd": "B",
-      "PurchDate": 1740718800000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75031,
-      "Tract_Name": "Fincher/MASH Properties",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.97508,
-      "longitude_dd": -88.20128,
-      "Wthr_grd": "B",
-      "PurchDate": 1741237200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75035,
-      "Tract_Name": "W.Reynolds/Laurie Properties",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.48813,
-      "longitude_dd": -88.37603,
-      "Wthr_grd": "B",
-      "PurchDate": 1741237200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75051,
-      "Tract_Name": "Racetrack #3",
+      "report_tract_no": 73749,
+      "Tract_Name": "Hunter Benn 24-06 Bakers Fork Rd",
       "tract_status_desc": "Active",
       "Forester": "Chad Dickinson",
       "tract_type_family": "Company",
       "SaleType": "Lump",
-      "latitude_dd": 31.43168,
-      "longitude_dd": -88.08025,
-      "Wthr_grd": "B",
-      "PurchDate": 1741924800000,
+      "latitude_dd": 31.55139,
+      "longitude_dd": -88.17034,
+      "Wthr_grd": "A",
+      "PurchDate": 1731042000000,
       "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74941,
-      "Tract_Name": "Longwood/Gilley Clearcut",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.58421,
-      "longitude_dd": -88.20608,
-      "Wthr_grd": "B",
-      "PurchDate": 1740546000000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74648,
-      "Tract_Name": "Westervelt Q2",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.29265,
-      "longitude_dd": -88.4525,
-      "Wthr_grd": "B",
-      "PurchDate": 1738558800000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74806,
-      "Tract_Name": "Fincher/Hancock",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.43765,
-      "longitude_dd": -88.58435,
-      "Wthr_grd": "B",
-      "PurchDate": 1739768400000,
-      "harvest_status": "Started"
     }
   },
   {
@@ -300,6 +300,134 @@
       "longitude_dd": -87.85078,
       "Wthr_grd": "C",
       "PurchDate": 1731042000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73756,
+      "Tract_Name": "ASR Transportation/Aquatic",
+      "tract_status_desc": "Complete",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.63475,
+      "longitude_dd": -88.12181,
+      "Wthr_grd": "B",
+      "PurchDate": 1731042000000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73795,
+      "Tract_Name": "HTF - PH Timber 2024",
+      "tract_status_desc": "Complete",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.29063,
+      "longitude_dd": -88.76984,
+      "Wthr_grd": "B",
+      "PurchDate": 1731992400000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73796,
+      "Tract_Name": "Timberline Trucking - O'Melia",
+      "tract_status_desc": "Complete",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.2789153,
+      "longitude_dd": -88.5545139,
+      "Wthr_grd": "B",
+      "PurchDate": 1731387600000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73830,
+      "Tract_Name": "SLM/HTLP 127 s19",
+      "tract_status_desc": "Complete",
+      "Forester": "Andie Stanovich",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.741437,
+      "longitude_dd": -87.0411,
+      "Wthr_grd": "B",
+      "PurchDate": 1731646800000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73848,
+      "Tract_Name": "Stallworth/Turner",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.9775,
+      "longitude_dd": -88.3299,
+      "Wthr_grd": "B",
+      "PurchDate": 1731906000000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73850,
+      "Tract_Name": "Scotch Plywood/Douglas Waddell",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Henslee",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.45329,
+      "longitude_dd": -88.55933,
+      "Wthr_grd": "A",
+      "PurchDate": 1731992400000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73916,
+      "Tract_Name": "BurgerWorld/Joe Loper",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.0136,
+      "longitude_dd": -88.6215,
+      "Wthr_grd": "B",
+      "PurchDate": 1732251600000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 73973,
+      "Tract_Name": "Matthews 24-4",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 31.1994,
+      "longitude_dd": -87.6557,
+      "Wthr_grd": "A",
+      "PurchDate": 1733115600000,
       "harvest_status": "Started"
     }
   },
@@ -322,113 +450,33 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74945,
-      "Tract_Name": "Longwood/Gilley Thinning",
+      "report_tract_no": 73996,
+      "Tract_Name": "C E HARRELL/Daniel Davis",
       "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
+      "Forester": "Ryan Mattei",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.58533,
-      "longitude_dd": -88.20608,
+      "latitude_dd": 31.24486,
+      "longitude_dd": -88.25673,
       "Wthr_grd": "B",
-      "PurchDate": 1740546000000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74562,
-      "Tract_Name": "Circle T/George Family Partnership",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.89936,
-      "longitude_dd": -88.08118,
-      "Wthr_grd": "A",
-      "PurchDate": 1737954000000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75054,
-      "Tract_Name": "Racetrack #2",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 31.42423,
-      "longitude_dd": -88.07553,
-      "Wthr_grd": "B",
-      "PurchDate": 1741924800000,
+      "PurchDate": 1733288400000,
       "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75188,
-      "Tract_Name": "Fincher/Riverside Farms",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.85137,
-      "longitude_dd": -88.43288,
-      "Wthr_grd": "B",
-      "PurchDate": 1742443200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75292,
-      "Tract_Name": "Henderson TF/Beasley",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.6322,
-      "longitude_dd": -88.6758,
-      "Wthr_grd": "B",
-      "PurchDate": 1743393600000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75088,
-      "Tract_Name": "Pearl River Land & Timber / Holden",
-      "tract_status_desc": "Active",
+      "report_tract_no": 74019,
+      "Tract_Name": "Timberline - Altmayer High Fence",
+      "tract_status_desc": "Complete",
       "Forester": "Josh Balsom",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 30.62957,
-      "longitude_dd": -88.67998,
-      "Wthr_grd": "A",
-      "PurchDate": 1741665600000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73749,
-      "Tract_Name": "Hunter Benn 24-06 Bakers Fork Rd",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 31.55139,
-      "longitude_dd": -88.17034,
-      "Wthr_grd": "A",
-      "PurchDate": 1731042000000,
-      "harvest_status": "Not Started"
+      "latitude_dd": 30.86686,
+      "longitude_dd": -88.4212,
+      "Wthr_grd": "B",
+      "PurchDate": 1733288400000,
+      "harvest_status": "Complete"
     }
   },
   {
@@ -450,64 +498,96 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74191,
-      "Tract_Name": "Tensaw L&T 25-01 Railroad",
+      "report_tract_no": 74044,
+      "Tract_Name": "Wilkerson",
       "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
+      "Forester": "Tyler Mangum",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 31.30608,
-      "longitude_dd": -88.01923,
-      "Wthr_grd": "C",
-      "PurchDate": 1734930000000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74331,
-      "Tract_Name": "Hunter Benn 25-01 First Thinning",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 31.53426,
-      "longitude_dd": -88.25501,
+      "latitude_dd": 30.64374,
+      "longitude_dd": -88.33742,
       "Wthr_grd": "A",
-      "PurchDate": 1736312400000,
-      "harvest_status": "Not Started"
+      "PurchDate": 1733461200000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75036,
-      "Tract_Name": "Mark Barron",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.7868,
-      "longitude_dd": -88.2407,
-      "Wthr_grd": "A",
-      "PurchDate": 1741237200000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75038,
-      "Tract_Name": "W.Reynolds/Henson",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
+      "report_tract_no": 74074,
+      "Tract_Name": "Z&W/Thurmond",
+      "tract_status_desc": "Complete",
+      "Forester": "Tyler Mangum",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.33162,
-      "longitude_dd": -88.11889,
+      "latitude_dd": 30.6905,
+      "longitude_dd": -87.5258,
+      "Wthr_grd": "C",
+      "PurchDate": 1733806800000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74099,
+      "Tract_Name": "BurgerWorld/Lowe",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.1609,
+      "longitude_dd": -88.4296,
+      "Wthr_grd": "A",
+      "PurchDate": 1733893200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74102,
+      "Tract_Name": "Longwood/Hardee 24",
+      "tract_status_desc": "Active",
+      "Forester": "Dustin Phillips",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.5542,
+      "longitude_dd": -88.4737,
+      "Wthr_grd": "A",
+      "PurchDate": 1734325200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74171,
+      "Tract_Name": "ASR Transportation/Blackwell ",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.26647,
+      "longitude_dd": -88.04601,
       "Wthr_grd": "B",
-      "PurchDate": 1741237200000,
+      "PurchDate": 1734498000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74185,
+      "Tract_Name": "Cecil Williams",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.8993,
+      "longitude_dd": -88.3875,
+      "Wthr_grd": "B",
+      "PurchDate": 1734584400000,
       "harvest_status": "Started"
     }
   },
@@ -530,432 +610,208 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75204,
-      "Tract_Name": "John Davis",
+      "report_tract_no": 74191,
+      "Tract_Name": "Tensaw L&T 25-01 Railroad",
       "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
+      "Forester": "Chad Dickinson",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 30.965,
-      "longitude_dd": -88.3139,
-      "Wthr_grd": "A",
-      "PurchDate": 1742788800000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75210,
-      "Tract_Name": "ASR/Hancock",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.80405,
-      "longitude_dd": -88.54209,
-      "Wthr_grd": "B",
-      "PurchDate": 1742788800000,
+      "latitude_dd": 31.30608,
+      "longitude_dd": -88.01923,
+      "Wthr_grd": "C",
+      "PurchDate": 1734930000000,
       "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75211,
-      "Tract_Name": "AL-TOM/WEST",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.92055,
-      "longitude_dd": -88.52227,
-      "Wthr_grd": "B",
-      "PurchDate": 1742788800000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75011,
-      "Tract_Name": "Dugald Jim Barr",
-      "tract_status_desc": "Active",
+      "report_tract_no": 74227,
+      "Tract_Name": "Fish River",
+      "tract_status_desc": "Complete",
       "Forester": "Tyler Mangum",
       "tract_type_family": "Company",
       "SaleType": "Lump",
-      "latitude_dd": 30.9193,
-      "longitude_dd": -87.7077,
+      "latitude_dd": 30.6278,
+      "longitude_dd": -87.9152,
       "Wthr_grd": "A",
-      "PurchDate": 1742443200000,
-      "harvest_status": "Not Started"
+      "PurchDate": 1736053200000,
+      "harvest_status": "Complete"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75016,
-      "Tract_Name": "R.Revette/Holston",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.67679,
-      "longitude_dd": -88.52807,
-      "Wthr_grd": "B",
-      "PurchDate": 1741064400000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75141,
-      "Tract_Name": "BurgerWorld/Mag 7",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.7976,
-      "longitude_dd": -87.8489,
-      "Wthr_grd": "B",
-      "PurchDate": 1742184000000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75151,
-      "Tract_Name": "Mary Tucker",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 31.62577,
-      "longitude_dd": -88.36959,
-      "Wthr_grd": "B",
-      "PurchDate": 1742270400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75167,
-      "Tract_Name": "ICTALURUS PU",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.68891,
-      "longitude_dd": -88.79599,
-      "Wthr_grd": "B",
-      "PurchDate": 1738213200000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75017,
-      "Tract_Name": "Anderson/Pryor",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.4585,
-      "longitude_dd": -87.8069,
-      "Wthr_grd": "C",
-      "PurchDate": 1741064400000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74803,
-      "Tract_Name": "AL - Tom Forest Products / Dale",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.34238,
-      "longitude_dd": -88.33446,
-      "Wthr_grd": "A",
-      "PurchDate": 1739509200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74861,
-      "Tract_Name": "Dudley Maples",
+      "report_tract_no": 74243,
+      "Tract_Name": "TIMBERLINE/BROWN",
       "tract_status_desc": "Active",
       "Forester": "Dustin Phillips",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.8574,
-      "longitude_dd": -88.8417,
-      "Wthr_grd": "B",
-      "PurchDate": 1739941200000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74988,
-      "Tract_Name": "Grifco",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.9905,
-      "longitude_dd": -88.4602,
-      "Wthr_grd": "B",
-      "PurchDate": 1741665600000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74996,
-      "Tract_Name": "Lewis Creek",
-      "tract_status_desc": "Active",
-      "Forester": "Chad Dickinson",
-      "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 31.35945,
-      "longitude_dd": -88.04681,
-      "Wthr_grd": "C",
-      "PurchDate": 1741579200000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74997,
-      "Tract_Name": "Hall 2025",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 31.1737,
-      "longitude_dd": -87.7471,
-      "Wthr_grd": "B",
-      "PurchDate": 1740373200000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 75000,
-      "Tract_Name": "Sturdivant/Jones",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.057,
-      "longitude_dd": -88.6949,
-      "Wthr_grd": "B",
-      "PurchDate": 1740978000000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74649,
-      "Tract_Name": "Morgan 2025",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.9957,
-      "longitude_dd": -88.2053,
+      "latitude_dd": 31.0171,
+      "longitude_dd": -88.5712,
       "Wthr_grd": "A",
-      "PurchDate": 1738558800000,
+      "PurchDate": 1736139600000,
       "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74671,
-      "Tract_Name": "Acacia/Garrett",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.8783,
-      "longitude_dd": -88.2192,
-      "Wthr_grd": "A",
-      "PurchDate": 1738731600000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74902,
-      "Tract_Name": "Burgerworld/Gray",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.7696,
-      "longitude_dd": -88.6395,
-      "Wthr_grd": "A",
-      "PurchDate": 1740373200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74926,
-      "Tract_Name": "STALLWORTH/BPW",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.8967,
-      "longitude_dd": -87.7525,
-      "Wthr_grd": "A",
-      "PurchDate": 1740546000000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74927,
-      "Tract_Name": "Southeast L&T/Eichold",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.0324,
-      "longitude_dd": -87.5901,
-      "Wthr_grd": "A",
-      "PurchDate": 1740546000000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74766,
-      "Tract_Name": "ASR Transportation / Willis",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.61932,
-      "longitude_dd": -88.40725,
-      "Wthr_grd": "A",
-      "PurchDate": 1739336400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74566,
-      "Tract_Name": "W. Reynolds/Woods",
+      "report_tract_no": 74282,
+      "Tract_Name": "W.Reynolds/Sue James",
       "tract_status_desc": "Active",
       "Forester": "Chad Dickinson",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.23011,
-      "longitude_dd": -88.30937,
-      "Wthr_grd": "B",
-      "PurchDate": 1737954000000,
+      "latitude_dd": 31.36739,
+      "longitude_dd": -88.25501,
+      "Wthr_grd": "A",
+      "PurchDate": 1735880400000,
       "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74603,
-      "Tract_Name": "HTF / Rame",
+      "report_tract_no": 74283,
+      "Tract_Name": "ASR Transportation / Parks",
       "tract_status_desc": "Active",
       "Forester": "Josh Balsom",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.75328,
-      "longitude_dd": -88.54057,
+      "latitude_dd": 31.41043,
+      "longitude_dd": -88.13296,
       "Wthr_grd": "B",
-      "PurchDate": 1738126800000,
+      "PurchDate": 1735880400000,
       "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74604,
-      "Tract_Name": "Acacia/Legear",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.2375,
-      "longitude_dd": -88.7327,
-      "Wthr_grd": "A",
-      "PurchDate": 1738126800000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74864,
-      "Tract_Name": "Timberline/DeSoto",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.67358,
-      "longitude_dd": -88.87134,
-      "Wthr_grd": "A",
-      "PurchDate": 1739941200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74883,
-      "Tract_Name": "Fincher/Eubanks 2025",
+      "report_tract_no": 74325,
+      "Tract_Name": "C E HARRELL/Odom 2025",
       "tract_status_desc": "Active",
       "Forester": "Ryan Mattei",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 30.80147,
-      "longitude_dd": -88.10993,
+      "latitude_dd": 31.10165,
+      "longitude_dd": -88.19881,
       "Wthr_grd": "B",
-      "PurchDate": 1740114000000,
+      "PurchDate": 1736226000000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74326,
+      "Tract_Name": "Altmayer Boothetown Road",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 30.95264,
+      "longitude_dd": -88.40019,
+      "Wthr_grd": "A",
+      "PurchDate": 1736917200000,
       "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74899,
-      "Tract_Name": "Michael Davis",
+      "report_tract_no": 74331,
+      "Tract_Name": "Hunter Benn 25-01 First Thinning",
       "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
+      "Forester": "Chad Dickinson",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 30.9707,
-      "longitude_dd": -88.3286,
+      "latitude_dd": 31.53426,
+      "longitude_dd": -88.25501,
       "Wthr_grd": "A",
-      "PurchDate": 1740373200000,
+      "PurchDate": 1736312400000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74349,
+      "Tract_Name": "BurgerWorld/Bosarge",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.5027,
+      "longitude_dd": -88.6613,
+      "Wthr_grd": "B",
+      "PurchDate": 1736398800000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74371,
+      "Tract_Name": "Liollio",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.9715,
+      "longitude_dd": -88.2544,
+      "Wthr_grd": "A",
+      "PurchDate": 1736744400000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74417,
+      "Tract_Name": "Anderson Timber/Robert Tindall",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.5285,
+      "longitude_dd": -87.6644,
+      "Wthr_grd": "B",
+      "PurchDate": 1736830800000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74433,
+      "Tract_Name": "Z&W/McMillan #1",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.8799,
+      "longitude_dd": -87.6956,
+      "Wthr_grd": "A",
+      "PurchDate": 1736917200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74459,
+      "Tract_Name": "Burgerworld/Stinson",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.0092,
+      "longitude_dd": -88.0613,
+      "Wthr_grd": "A",
+      "PurchDate": 1737003600000,
       "harvest_status": "Started"
     }
   },
@@ -1026,96 +882,112 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74689,
-      "Tract_Name": "Ala-Miss/Gavin Scarbrough",
+      "report_tract_no": 74541,
+      "Tract_Name": "ASR Transportation / Stallworth",
       "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
+      "Forester": "Josh Balsom",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.45307,
-      "longitude_dd": -88.42118,
+      "latitude_dd": 31.0131202,
+      "longitude_dd": -88.2677966,
       "Wthr_grd": "B",
-      "PurchDate": 1738731600000,
-      "harvest_status": "Not Started"
+      "PurchDate": 1737608400000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74755,
-      "Tract_Name": "W.Reynolds/Mark Clarke",
+      "report_tract_no": 74558,
+      "Tract_Name": "Burgerworld/Rowe",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.6605,
+      "longitude_dd": -88.4003,
+      "Wthr_grd": "A",
+      "PurchDate": 1737694800000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74562,
+      "Tract_Name": "Circle T/George Family Partnership",
       "tract_status_desc": "Active",
       "Forester": "Chad Dickinson",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.364302,
-      "longitude_dd": -88.161225,
-      "Wthr_grd": "B",
-      "PurchDate": 1739250000000,
+      "latitude_dd": 30.89936,
+      "longitude_dd": -88.08118,
+      "Wthr_grd": "A",
+      "PurchDate": 1737954000000,
       "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74325,
-      "Tract_Name": "C E HARRELL/Odom 2025",
+      "report_tract_no": 74566,
+      "Tract_Name": "W. Reynolds/Woods",
       "tract_status_desc": "Active",
-      "Forester": "Ryan Mattei",
+      "Forester": "Chad Dickinson",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.10165,
-      "longitude_dd": -88.19881,
+      "latitude_dd": 31.23011,
+      "longitude_dd": -88.30937,
       "Wthr_grd": "B",
-      "PurchDate": 1736226000000,
+      "PurchDate": 1737954000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74603,
+      "Tract_Name": "HTF / Rame",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.75328,
+      "longitude_dd": -88.54057,
+      "Wthr_grd": "B",
+      "PurchDate": 1738126800000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74604,
+      "Tract_Name": "Acacia/Legear",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.2375,
+      "longitude_dd": -88.7327,
+      "Wthr_grd": "A",
+      "PurchDate": 1738126800000,
       "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74349,
-      "Tract_Name": "BurgerWorld/Bosarge",
+      "report_tract_no": 74607,
+      "Tract_Name": "Waterboard 2025",
       "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.5027,
-      "longitude_dd": -88.6613,
-      "Wthr_grd": "B",
-      "PurchDate": 1736398800000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74371,
-      "Tract_Name": "Liollio",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
+      "Forester": "Ryan Mattei",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 30.9715,
-      "longitude_dd": -88.2544,
+      "latitude_dd": 30.7347,
+      "longitude_dd": -88.3444,
       "Wthr_grd": "A",
-      "PurchDate": 1736744400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74417,
-      "Tract_Name": "Anderson Timber/Robert Tindall",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.5285,
-      "longitude_dd": -87.6644,
-      "Wthr_grd": "B",
-      "PurchDate": 1736830800000,
+      "PurchDate": 1738213200000,
       "harvest_status": "Not Started"
     }
   },
@@ -1154,193 +1026,65 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74459,
-      "Tract_Name": "Burgerworld/Stinson",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.0092,
-      "longitude_dd": -88.0613,
-      "Wthr_grd": "A",
-      "PurchDate": 1737003600000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74171,
-      "Tract_Name": "ASR Transportation/Blackwell ",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.26647,
-      "longitude_dd": -88.04601,
-      "Wthr_grd": "B",
-      "PurchDate": 1734498000000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74185,
-      "Tract_Name": "Cecil Williams",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.8993,
-      "longitude_dd": -88.3875,
-      "Wthr_grd": "B",
-      "PurchDate": 1734584400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74243,
-      "Tract_Name": "TIMBERLINE/BROWN",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.0171,
-      "longitude_dd": -88.5712,
-      "Wthr_grd": "A",
-      "PurchDate": 1736139600000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74541,
-      "Tract_Name": "ASR Transportation / Stallworth",
-      "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.0131202,
-      "longitude_dd": -88.2677966,
-      "Wthr_grd": "B",
-      "PurchDate": 1737608400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74558,
-      "Tract_Name": "Burgerworld/Rowe",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.6605,
-      "longitude_dd": -88.4003,
-      "Wthr_grd": "A",
-      "PurchDate": 1737694800000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74102,
-      "Tract_Name": "Longwood/Hardee 24",
-      "tract_status_desc": "Active",
-      "Forester": "Dustin Phillips",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.5542,
-      "longitude_dd": -88.4737,
-      "Wthr_grd": "A",
-      "PurchDate": 1734325200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74282,
-      "Tract_Name": "W.Reynolds/Sue James",
+      "report_tract_no": 74648,
+      "Tract_Name": "Westervelt Q2",
       "tract_status_desc": "Active",
       "Forester": "Chad Dickinson",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.36739,
-      "longitude_dd": -88.25501,
-      "Wthr_grd": "A",
-      "PurchDate": 1735880400000,
+      "latitude_dd": 31.29265,
+      "longitude_dd": -88.4525,
+      "Wthr_grd": "B",
+      "PurchDate": 1738558800000,
       "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74283,
-      "Tract_Name": "ASR Transportation / Parks",
+      "report_tract_no": 74649,
+      "Tract_Name": "Morgan 2025",
       "tract_status_desc": "Active",
+      "Forester": "Dustin Phillips",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.9957,
+      "longitude_dd": -88.2053,
+      "Wthr_grd": "A",
+      "PurchDate": 1738558800000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74671,
+      "Tract_Name": "Acacia/Garrett",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.8783,
+      "longitude_dd": -88.2192,
+      "Wthr_grd": "A",
+      "PurchDate": 1738731600000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74682,
+      "Tract_Name": "Sullivan Timber / Swamp",
+      "tract_status_desc": "Complete",
       "Forester": "Josh Balsom",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.41043,
-      "longitude_dd": -88.13296,
-      "Wthr_grd": "B",
-      "PurchDate": 1735880400000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73996,
-      "Tract_Name": "C E HARRELL/Daniel Davis",
-      "tract_status_desc": "Active",
-      "Forester": "Ryan Mattei",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.24486,
-      "longitude_dd": -88.25673,
-      "Wthr_grd": "B",
-      "PurchDate": 1733288400000,
-      "harvest_status": "Not Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74044,
-      "Tract_Name": "Wilkerson",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.64374,
-      "longitude_dd": -88.33742,
-      "Wthr_grd": "A",
-      "PurchDate": 1733461200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74433,
-      "Tract_Name": "Z&W/McMillan #1",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.8799,
-      "longitude_dd": -87.6956,
-      "Wthr_grd": "A",
-      "PurchDate": 1736917200000,
-      "harvest_status": "Started"
+      "latitude_dd": 30.98127,
+      "longitude_dd": -88.28371,
+      "Wthr_grd": "D",
+      "PurchDate": 1738645200000,
+      "harvest_status": "Complete"
     }
   },
   {
@@ -1362,96 +1106,304 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 75065,
-      "Tract_Name": "Mike Hudgins",
+      "report_tract_no": 74689,
+      "Tract_Name": "Ala-Miss/Gavin Scarbrough",
       "tract_status_desc": "Active",
       "Forester": "Dustin Phillips",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.9742,
-      "longitude_dd": -88.3343,
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.45307,
+      "longitude_dd": -88.42118,
       "Wthr_grd": "B",
-      "PurchDate": 1741323600000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73244,
-      "Tract_Name": "Tipton West",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.8575,
-      "longitude_dd": -88.5115,
-      "Wthr_grd": "A",
-      "PurchDate": 1728532800000,
+      "PurchDate": 1738731600000,
       "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73678,
-      "Tract_Name": "W. REYNOLDS/Andrew Williams",
+      "report_tract_no": 74750,
+      "Tract_Name": "Longwood/Tanner Farm North 4",
+      "tract_status_desc": "Complete",
+      "Forester": "Dustin Phillips",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.0696,
+      "longitude_dd": -88.3538,
+      "Wthr_grd": "A",
+      "PurchDate": 1739336400000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74755,
+      "Tract_Name": "W.Reynolds/Mark Clarke",
       "tract_status_desc": "Active",
       "Forester": "Chad Dickinson",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.474354,
-      "longitude_dd": -88.415471,
-      "Wthr_grd": "C",
-      "PurchDate": 1730433600000,
+      "latitude_dd": 31.364302,
+      "longitude_dd": -88.161225,
+      "Wthr_grd": "B",
+      "PurchDate": 1739250000000,
       "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73727,
-      "Tract_Name": "BURGERWORLD/Kolb",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.0479,
-      "longitude_dd": -87.679,
-      "Wthr_grd": "C",
-      "PurchDate": 1730869200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74099,
-      "Tract_Name": "BurgerWorld/Lowe",
-      "tract_status_desc": "Active",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.1609,
-      "longitude_dd": -88.4296,
-      "Wthr_grd": "A",
-      "PurchDate": 1733893200000,
-      "harvest_status": "Started"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73340,
-      "Tract_Name": "Alton Scott 24-01",
+      "report_tract_no": 74759,
+      "Tract_Name": "Deepcreek Flat Branch",
       "tract_status_desc": "Active",
       "Forester": "Dustin Phillips",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 31.4182,
-      "longitude_dd": -88.4127,
-      "Wthr_grd": "C",
-      "PurchDate": 1728014400000,
+      "latitude_dd": 30.9042,
+      "longitude_dd": -88.9137,
+      "Wthr_grd": "B",
+      "PurchDate": 1739336400000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74766,
+      "Tract_Name": "ASR Transportation / Willis",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.61932,
+      "longitude_dd": -88.40725,
+      "Wthr_grd": "A",
+      "PurchDate": 1739336400000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74803,
+      "Tract_Name": "AL - Tom Forest Products / Dale",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.34238,
+      "longitude_dd": -88.33446,
+      "Wthr_grd": "A",
+      "PurchDate": 1739509200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74806,
+      "Tract_Name": "Fincher/Hancock",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.43765,
+      "longitude_dd": -88.58435,
+      "Wthr_grd": "B",
+      "PurchDate": 1739768400000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74840,
+      "Tract_Name": "Paardeberg 2025",
+      "tract_status_desc": "Active",
+      "Forester": "Dustin Phillips",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 31.0037,
+      "longitude_dd": -88.1329,
+      "Wthr_grd": "B",
+      "PurchDate": 1739854800000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74861,
+      "Tract_Name": "Dudley Maples",
+      "tract_status_desc": "Active",
+      "Forester": "Dustin Phillips",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.8574,
+      "longitude_dd": -88.8417,
+      "Wthr_grd": "B",
+      "PurchDate": 1739941200000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74864,
+      "Tract_Name": "Timberline/DeSoto",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.67358,
+      "longitude_dd": -88.87134,
+      "Wthr_grd": "A",
+      "PurchDate": 1739941200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74879,
+      "Tract_Name": "Jordan Trust 2025-01",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 31.49224,
+      "longitude_dd": -88.20289,
+      "Wthr_grd": "B",
+      "PurchDate": 1740027600000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74883,
+      "Tract_Name": "Fincher/Eubanks 2025",
+      "tract_status_desc": "Active",
+      "Forester": "Ryan Mattei",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.80147,
+      "longitude_dd": -88.10993,
+      "Wthr_grd": "B",
+      "PurchDate": 1740114000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74899,
+      "Tract_Name": "Michael Davis",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.9707,
+      "longitude_dd": -88.3286,
+      "Wthr_grd": "A",
+      "PurchDate": 1740373200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74902,
+      "Tract_Name": "Burgerworld/Gray",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.7696,
+      "longitude_dd": -88.6395,
+      "Wthr_grd": "A",
+      "PurchDate": 1740373200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74926,
+      "Tract_Name": "STALLWORTH/BPW",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.8967,
+      "longitude_dd": -87.7525,
+      "Wthr_grd": "A",
+      "PurchDate": 1740546000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74927,
+      "Tract_Name": "Southeast L&T/Eichold",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.0324,
+      "longitude_dd": -87.5901,
+      "Wthr_grd": "A",
+      "PurchDate": 1740546000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74941,
+      "Tract_Name": "Longwood/Gilley Clearcut",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.58421,
+      "longitude_dd": -88.20608,
+      "Wthr_grd": "B",
+      "PurchDate": 1740546000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74942,
+      "Tract_Name": "Longwood/Gilley Thinning",
+      "tract_status_desc": "Complete",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.58533,
+      "longitude_dd": -88.21378,
+      "Wthr_grd": "B",
+      "PurchDate": 1740546000000,
+      "harvest_status": "Complete"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74945,
+      "Tract_Name": "Longwood/Gilley Thinning",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.58533,
+      "longitude_dd": -88.20608,
+      "Wthr_grd": "B",
+      "PurchDate": 1740546000000,
       "harvest_status": "Started"
     }
   },
@@ -1474,32 +1426,64 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73743,
-      "Tract_Name": "Camp Tiak",
+      "report_tract_no": 74975,
+      "Tract_Name": "Tamarack Summit Road",
       "tract_status_desc": "Active",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Company",
-      "SaleType": "Unit",
-      "latitude_dd": 30.92746,
-      "longitude_dd": -89.170909,
-      "Wthr_grd": "A",
-      "PurchDate": 1731301200000,
-      "harvest_status": "Complete"
+      "Forester": "Ryan Mattei",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.18057,
+      "longitude_dd": -88.17286,
+      "Wthr_grd": "B",
+      "PurchDate": 1740718800000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74607,
-      "Tract_Name": "Waterboard 2025",
+      "report_tract_no": 74988,
+      "Tract_Name": "Grifco",
       "tract_status_desc": "Active",
-      "Forester": "Ryan Mattei",
+      "Forester": "Dustin Phillips",
       "tract_type_family": "Company",
       "SaleType": "Unit",
-      "latitude_dd": 30.7347,
-      "longitude_dd": -88.3444,
-      "Wthr_grd": "A",
-      "PurchDate": 1738213200000,
+      "latitude_dd": 30.9905,
+      "longitude_dd": -88.4602,
+      "Wthr_grd": "B",
+      "PurchDate": 1741665600000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74996,
+      "Tract_Name": "Lewis Creek",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 31.35945,
+      "longitude_dd": -88.04681,
+      "Wthr_grd": "C",
+      "PurchDate": 1741579200000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 74997,
+      "Tract_Name": "Hall 2025",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 31.1737,
+      "longitude_dd": -87.7471,
+      "Wthr_grd": "B",
+      "PurchDate": 1740373200000,
       "harvest_status": "Not Started"
     }
   },
@@ -1522,6 +1506,182 @@
   {
     "attributes": {
       "report_location": "AXI",
+      "report_tract_no": 75000,
+      "Tract_Name": "Sturdivant/Jones",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.057,
+      "longitude_dd": -88.6949,
+      "Wthr_grd": "B",
+      "PurchDate": 1740978000000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75011,
+      "Tract_Name": "Dugald Jim Barr",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 30.9193,
+      "longitude_dd": -87.7077,
+      "Wthr_grd": "A",
+      "PurchDate": 1742443200000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75016,
+      "Tract_Name": "R.Revette/Holston",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.67679,
+      "longitude_dd": -88.52807,
+      "Wthr_grd": "B",
+      "PurchDate": 1741064400000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75017,
+      "Tract_Name": "Anderson/Pryor",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.4585,
+      "longitude_dd": -87.8069,
+      "Wthr_grd": "C",
+      "PurchDate": 1741064400000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75030,
+      "Tract_Name": "Altmayer River",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 31.00365,
+      "longitude_dd": -88.39089,
+      "Wthr_grd": "B",
+      "PurchDate": 1741665600000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75031,
+      "Tract_Name": "Fincher/MASH Properties",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.97508,
+      "longitude_dd": -88.20128,
+      "Wthr_grd": "B",
+      "PurchDate": 1741237200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75035,
+      "Tract_Name": "W.Reynolds/Laurie Properties",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.48813,
+      "longitude_dd": -88.37603,
+      "Wthr_grd": "B",
+      "PurchDate": 1741237200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75036,
+      "Tract_Name": "Mark Barron",
+      "tract_status_desc": "Active",
+      "Forester": "Dustin Phillips",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.7868,
+      "longitude_dd": -88.2407,
+      "Wthr_grd": "A",
+      "PurchDate": 1741237200000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75038,
+      "Tract_Name": "W.Reynolds/Henson",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 31.33162,
+      "longitude_dd": -88.11889,
+      "Wthr_grd": "B",
+      "PurchDate": 1741237200000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75051,
+      "Tract_Name": "Racetrack #3",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 31.43168,
+      "longitude_dd": -88.08025,
+      "Wthr_grd": "B",
+      "PurchDate": 1741924800000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75054,
+      "Tract_Name": "Racetrack #2",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Company",
+      "SaleType": "Lump",
+      "latitude_dd": 31.42423,
+      "longitude_dd": -88.07553,
+      "Wthr_grd": "B",
+      "PurchDate": 1741924800000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
       "report_tract_no": 75055,
       "Tract_Name": "Altmayer Comp. 59",
       "tract_status_desc": "Active",
@@ -1538,369 +1698,225 @@
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73680,
-      "Tract_Name": "BURGERWORLD/Vincent Odom",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.1693,
-      "longitude_dd": -88.2729,
-      "Wthr_grd": "C",
-      "PurchDate": 1730433600000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73245,
-      "Tract_Name": "Tipton East & West",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 30.8566,
-      "longitude_dd": -88.5119,
-      "Wthr_grd": "A",
-      "PurchDate": 1728532800000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73756,
-      "Tract_Name": "ASR Transportation/Aquatic",
-      "tract_status_desc": "Complete",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.63475,
-      "longitude_dd": -88.12181,
-      "Wthr_grd": "B",
-      "PurchDate": 1731042000000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73667,
-      "Tract_Name": "HENDERSON TF/Pittman HTF",
-      "tract_status_desc": "Complete",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.54318,
-      "longitude_dd": -88.66772,
-      "Wthr_grd": "B",
-      "PurchDate": 1730347200000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73668,
-      "Tract_Name": "Pearl River/Vice ",
-      "tract_status_desc": "Complete",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.47014,
-      "longitude_dd": -88.49839,
-      "Wthr_grd": "B",
-      "PurchDate": 1730347200000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73669,
-      "Tract_Name": "TIMBER RESOURCES/Duvall JT 1",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Henslee",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.83457,
-      "longitude_dd": -88.62827,
-      "Wthr_grd": "B",
-      "PurchDate": 1730433600000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74227,
-      "Tract_Name": "Fish River",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Company",
-      "SaleType": "Lump",
-      "latitude_dd": 30.6278,
-      "longitude_dd": -87.9152,
-      "Wthr_grd": "A",
-      "PurchDate": 1736053200000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74750,
-      "Tract_Name": "Longwood/Tanner Farm North 4",
-      "tract_status_desc": "Complete",
+      "report_tract_no": 75065,
+      "Tract_Name": "Mike Hudgins",
+      "tract_status_desc": "Active",
       "Forester": "Dustin Phillips",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.0696,
-      "longitude_dd": -88.3538,
-      "Wthr_grd": "A",
-      "PurchDate": 1739336400000,
-      "harvest_status": "Complete"
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.9742,
+      "longitude_dd": -88.3343,
+      "Wthr_grd": "B",
+      "PurchDate": 1741323600000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74682,
-      "Tract_Name": "Sullivan Timber / Swamp",
-      "tract_status_desc": "Complete",
+      "report_tract_no": 75088,
+      "Tract_Name": "Pearl River Land & Timber / Holden",
+      "tract_status_desc": "Active",
       "Forester": "Josh Balsom",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 30.98127,
-      "longitude_dd": -88.28371,
-      "Wthr_grd": "D",
-      "PurchDate": 1738645200000,
-      "harvest_status": "Complete"
+      "latitude_dd": 30.62957,
+      "longitude_dd": -88.67998,
+      "Wthr_grd": "A",
+      "PurchDate": 1741665600000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 74942,
-      "Tract_Name": "Longwood/Gilley Thinning",
-      "tract_status_desc": "Complete",
+      "report_tract_no": 75141,
+      "Tract_Name": "BurgerWorld/Mag 7",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.7976,
+      "longitude_dd": -87.8489,
+      "Wthr_grd": "B",
+      "PurchDate": 1742184000000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75151,
+      "Tract_Name": "Mary Tucker",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 31.62577,
+      "longitude_dd": -88.36959,
+      "Wthr_grd": "B",
+      "PurchDate": 1742270400000,
+      "harvest_status": "Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75167,
+      "Tract_Name": "ICTALURUS PU",
+      "tract_status_desc": "Active",
+      "Forester": "Josh Balsom",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.68891,
+      "longitude_dd": -88.79599,
+      "Wthr_grd": "B",
+      "PurchDate": 1738213200000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75188,
+      "Tract_Name": "Fincher/Riverside Farms",
+      "tract_status_desc": "Active",
       "Forester": "Chad Dickinson",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.58533,
-      "longitude_dd": -88.21378,
+      "latitude_dd": 30.85137,
+      "longitude_dd": -88.43288,
       "Wthr_grd": "B",
-      "PurchDate": 1740546000000,
-      "harvest_status": "Complete"
+      "PurchDate": 1742443200000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73830,
-      "Tract_Name": "SLM/HTLP 127 s19",
-      "tract_status_desc": "Complete",
-      "Forester": "Andie Stanovich",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.741437,
-      "longitude_dd": -87.0411,
-      "Wthr_grd": "B",
-      "PurchDate": 1731646800000,
-      "harvest_status": "Complete"
+      "report_tract_no": 75204,
+      "Tract_Name": "John Davis",
+      "tract_status_desc": "Active",
+      "Forester": "Tyler Mangum",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 30.965,
+      "longitude_dd": -88.3139,
+      "Wthr_grd": "A",
+      "PurchDate": 1742788800000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73795,
-      "Tract_Name": "HTF - PH Timber 2024",
-      "tract_status_desc": "Complete",
+      "report_tract_no": 75210,
+      "Tract_Name": "ASR/Hancock",
+      "tract_status_desc": "Active",
       "Forester": "Josh Balsom",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.29063,
-      "longitude_dd": -88.76984,
+      "latitude_dd": 31.80405,
+      "longitude_dd": -88.54209,
       "Wthr_grd": "B",
-      "PurchDate": 1731992400000,
-      "harvest_status": "Complete"
+      "PurchDate": 1742788800000,
+      "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73796,
-      "Tract_Name": "Timberline Trucking - O'Melia",
-      "tract_status_desc": "Complete",
+      "report_tract_no": 75211,
+      "Tract_Name": "AL-TOM/WEST",
+      "tract_status_desc": "Active",
       "Forester": "Josh Balsom",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.2789153,
-      "longitude_dd": -88.5545139,
+      "latitude_dd": 31.92055,
+      "longitude_dd": -88.52227,
       "Wthr_grd": "B",
-      "PurchDate": 1731387600000,
-      "harvest_status": "Complete"
+      "PurchDate": 1742788800000,
+      "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73848,
-      "Tract_Name": "Stallworth/Turner",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.9775,
-      "longitude_dd": -88.3299,
-      "Wthr_grd": "B",
-      "PurchDate": 1731906000000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73850,
-      "Tract_Name": "Scotch Plywood/Douglas Waddell",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Henslee",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.45329,
-      "longitude_dd": -88.55933,
-      "Wthr_grd": "A",
-      "PurchDate": 1731992400000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74019,
-      "Tract_Name": "Timberline - Altmayer High Fence",
-      "tract_status_desc": "Complete",
-      "Forester": "Josh Balsom",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.86686,
-      "longitude_dd": -88.4212,
-      "Wthr_grd": "B",
-      "PurchDate": 1733288400000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 74074,
-      "Tract_Name": "Z&W/Thurmond",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 30.6905,
-      "longitude_dd": -87.5258,
+      "report_tract_no": 75284,
+      "Tract_Name": "MAJ Wildlife Trust",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 31.51541,
+      "longitude_dd": -88.16345,
       "Wthr_grd": "C",
-      "PurchDate": 1733806800000,
-      "harvest_status": "Complete"
+      "PurchDate": 1743739200000,
+      "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73679,
-      "Tract_Name": "Acacia/Stallworth",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.3504,
-      "longitude_dd": -88.3708,
-      "Wthr_grd": "C",
-      "PurchDate": 1730433600000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73916,
-      "Tract_Name": "BurgerWorld/Joe Loper",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.0136,
-      "longitude_dd": -88.6215,
-      "Wthr_grd": "B",
-      "PurchDate": 1732251600000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73697,
-      "Tract_Name": "TIMBER RESOURCES/W Ernest",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Henslee",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.63174,
-      "longitude_dd": -88.09708,
-      "Wthr_grd": "B",
-      "PurchDate": 1730782800000,
-      "harvest_status": "Complete"
-    }
-  },
-  {
-    "attributes": {
-      "report_location": "AXI",
-      "report_tract_no": 73698,
-      "Tract_Name": "ACACIA/Steel Mill",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
-      "tract_type_family": "Wood Supplier",
-      "SaleType": "Supplier",
-      "latitude_dd": 31.1383,
-      "longitude_dd": -87.9845,
+      "report_tract_no": 75288,
+      "Tract_Name": "MAJ Charitable Trust",
+      "tract_status_desc": "Active",
+      "Forester": "Chad Dickinson",
+      "tract_type_family": "Company",
+      "SaleType": "Unit",
+      "latitude_dd": 31.52526,
+      "longitude_dd": -88.16345,
       "Wthr_grd": "A",
-      "PurchDate": 1730782800000,
-      "harvest_status": "Complete"
+      "PurchDate": 1743739200000,
+      "harvest_status": "Not Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73707,
-      "Tract_Name": "Southeast L&T/Evelyn Stanley",
-      "tract_status_desc": "Complete",
-      "Forester": "Tyler Mangum",
+      "report_tract_no": 75292,
+      "Tract_Name": "Henderson TF/Beasley",
+      "tract_status_desc": "Active",
+      "Forester": "Dustin Phillips",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.0806,
-      "longitude_dd": -87.6355,
-      "Wthr_grd": "A",
-      "PurchDate": 1730782800000,
-      "harvest_status": "Complete"
+      "latitude_dd": 31.6322,
+      "longitude_dd": -88.6758,
+      "Wthr_grd": "B",
+      "PurchDate": 1743393600000,
+      "harvest_status": "Started"
     }
   },
   {
     "attributes": {
       "report_location": "AXI",
-      "report_tract_no": 73714,
-      "Tract_Name": "Southeast L&T/Lineberry",
-      "tract_status_desc": "Complete",
+      "report_tract_no": 75295,
+      "Tract_Name": "Carpenter/Webb",
+      "tract_status_desc": "Active",
+      "Forester": "Dustin Phillips",
+      "tract_type_family": "Wood Supplier",
+      "SaleType": "Supplier",
+      "latitude_dd": 30.6515,
+      "longitude_dd": -88.7904,
+      "Wthr_grd": "B",
+      "PurchDate": 1743480000000,
+      "harvest_status": "Not Started"
+    }
+  },
+  {
+    "attributes": {
+      "report_location": "AXI",
+      "report_tract_no": 75308,
+      "Tract_Name": "Lathan",
+      "tract_status_desc": "Active",
       "Forester": "Tyler Mangum",
       "tract_type_family": "Wood Supplier",
       "SaleType": "Supplier",
-      "latitude_dd": 31.1964,
-      "longitude_dd": -87.7882,
-      "Wthr_grd": "C",
-      "PurchDate": 1730782800000,
-      "harvest_status": "Complete"
+      "latitude_dd": 30.5684,
+      "longitude_dd": -88.1433,
+      "Wthr_grd": "B",
+      "PurchDate": 1743480000000,
+      "harvest_status": "Not Started"
     }
   }
 ]

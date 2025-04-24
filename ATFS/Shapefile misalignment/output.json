@@ -1,0 +1,117 @@
+[
+  {
+    "path": "/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/264G Messerle & Sons/264G_Messerle___Sons.shp",
+    "crs": {
+      "init": "epsg:3857"
+    },
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTIO",
+    "geometry_type": "Polygon",
+    "properties": [
+      "ID",
+      "NAME",
+      "DATE_CREAT",
+      "DATE_MODIF",
+      "RECORD_TAX"
+    ],
+    "feature_count": 1,
+    "bounding_box": [
+      -13831392.96972046,
+      5347137.296290811,
+      -13829528.42255183,
+      5348295.467324284
+    ],
+    "crs_suspicious": true
+  },
+  {
+    "path": "/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/5671 Volz/5671_Volz.shp",
+    "crs": {
+      "init": "epsg:3857"
+    },
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTIO",
+    "geometry_type": "Polygon",
+    "properties": [
+      "ID",
+      "NAME",
+      "DATE_CREAT",
+      "DATE_MODIF",
+      "RECORD_TAX"
+    ],
+    "feature_count": 1,
+    "bounding_box": [
+      -13676542.85327816,
+      5480827.391871037,
+      -13675745.18312422,
+      5481612.540367968
+    ],
+    "crs_suspicious": true
+  },
+  {
+    "path": "/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/1st Batch/Wilkins Ranch LLC/Wilkins_Ranch_LLC.shp",
+    "crs": {
+      "init": "epsg:3857"
+    },
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTIO",
+    "geometry_type": "Polygon",
+    "properties": [
+      "ID",
+      "NAME",
+      "DATE_CREAT",
+      "DATE_MODIF",
+      "RECORD_TAX"
+    ],
+    "feature_count": 1,
+    "bounding_box": [
+      -13675874.200582186,
+      5490391.69921656,
+      -13671573.009181697,
+      5492651.772968895
+    ],
+    "crs_suspicious": true
+  },
+  {
+    "path": "/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/1st Batch/Volz Joint Trust/Volz_Joint_Trust.shp",
+    "crs": {
+      "init": "epsg:3857"
+    },
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTIO",
+    "geometry_type": "Polygon",
+    "properties": [
+      "ID",
+      "NAME",
+      "DATE_CREAT",
+      "DATE_MODIF",
+      "RECORD_TAX"
+    ],
+    "feature_count": 1,
+    "bounding_box": [
+      -13676542.85327816,
+      5480827.391871037,
+      -13675745.18312422,
+      5481612.540367968
+    ],
+    "crs_suspicious": true
+  },
+  {
+    "path": "/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/1457 Heistand LLC (2)/1457_Heistand_LLC.shp",
+    "crs": {
+      "init": "epsg:3857"
+    },
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTIO",
+    "geometry_type": "Polygon",
+    "properties": [
+      "ID",
+      "NAME",
+      "DATE_CREAT",
+      "DATE_MODIF",
+      "RECORD_TAX"
+    ],
+    "feature_count": 1,
+    "bounding_box": [
+      -13819386.707130978,
+      5341684.091381118,
+      -13817191.238754423,
+      5343350.851448865
+    ],
+    "crs_suspicious": true
+  }
+]
