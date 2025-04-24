@@ -1,0 +1,36 @@
+🧪 What the Suspicious CRS Test Is Checking
+🔍 The logic:
+In your Python script, this line:
+
+python
+Copy
+Edit
+legacy_terms = ["Mercator_1SP", "Popular_Visualisation", "spherical"]
+suspicious = any(term in crs_wkt for term in legacy_terms) if crs_wkt else False
+is checking the CRS WKT string for any indication that the shapefile may have:
+
+
+Term	Why It’s Suspicious
+"Mercator_1SP"	Used in EPSG:3785 (deprecated “fake Mercator”) — spherical model
+"Popular_Visualisation"	Legacy naming for 3785 from older Esri tools
+"spherical"	Indicates the projection is based on a sphere instead of an ellipsoid — again, a sign of EPSG:3785
+These are all markers of a projection that claims to be Web Mercator (EPSG:3857), but might actually be based on the older, less accurate EPSG:3785 definition.
+
+🚩 Why This Matters
+Just seeing epsg:3857 in .crs isn't enough!
+A shapefile may declare itself as EPSG:3857 using:
+
+json
+Copy
+Edit
+"crs": { "init": "epsg:3857" }
+But the .prj WKT inside the file might still follow the structure of EPSG:3785.
+
+Many tools (like GeoTools) will use the WKT to determine how to reproject, not the EPSG code — especially if the WKT is ambiguous or non-authoritative.
+
+This mismatch is what causes the ~12-mile northing shift (or other misalignment) in map display or geoprocessing.
+
+✅ What crs_suspicious: true Means
+“This shapefile says it’s using EPSG:3857, but its internal projection string contains signs that it might actually be using an outdated, spherical definition (EPSG:3785). Treat with caution — consider overriding or correcting the projection.”
+
+Let me know if you'd like to expand this detection to match other patterns (like UTM zone mismatches, missing authorities, etc.), or if you want a visual of how these projection strings differ!
