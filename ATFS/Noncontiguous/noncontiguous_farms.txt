@@ -1,3 +1,0 @@
-Non-contiguous tree farm IDs:
-OR-33_1.6
-OR-33_9.6
