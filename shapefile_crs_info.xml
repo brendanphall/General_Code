@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ShapefileCRSInfo>
+  <Shapefile path="/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/264G Messerle &amp; Sons/264G_Messerle___Sons.shp">
+    <CRSName>EPSG:WGS 84 / Pseudo-Mercator</CRSName>
+    <CRSWKT>PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["WGS_1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Longitude", EAST], 
+    AXIS["Latitude", NORTH], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Mercator_1SP"], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["x", EAST], 
+  AXIS["y", NORTH], 
+  AUTHORITY["EPSG","3857"]]</CRSWKT>
+    <EPSGCode>EPSG:3395</EPSGCode>
+
+
+  </Shapefile>
+  <Shapefile path="/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/5671 Volz/5671_Volz.shp">
+    <CRSName>EPSG:WGS 84 / Pseudo-Mercator</CRSName>
+    <CRSWKT>PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["WGS_1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Longitude", EAST], 
+    AXIS["Latitude", NORTH], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Mercator_1SP"], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["x", EAST], 
+  AXIS["y", NORTH], 
+  AUTHORITY["EPSG","3857"]]</CRSWKT>
+    <EPSGCode>EPSG:3395</EPSGCode>
+
+
+  </Shapefile>
+  <Shapefile path="/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/1st Batch/Wilkins Ranch LLC/Wilkins_Ranch_LLC.shp">
+    <CRSName>EPSG:WGS 84 / Pseudo-Mercator</CRSName>
+    <CRSWKT>PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["WGS_1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Longitude", EAST], 
+    AXIS["Latitude", NORTH], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Mercator_1SP"], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["x", EAST], 
+  AXIS["y", NORTH], 
+  AUTHORITY["EPSG","3857"]]</CRSWKT>
+    <EPSGCode>EPSG:3395</EPSGCode>
+
+
+  </Shapefile>
+  <Shapefile path="/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/1st Batch/Volz Joint Trust/Volz_Joint_Trust.shp">
+    <CRSName>EPSG:WGS 84 / Pseudo-Mercator</CRSName>
+    <CRSWKT>PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["WGS_1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Longitude", EAST], 
+    AXIS["Latitude", NORTH], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Mercator_1SP"], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["x", EAST], 
+  AXIS["y", NORTH], 
+  AUTHORITY["EPSG","3857"]]</CRSWKT>
+    <EPSGCode>EPSG:3395</EPSGCode>
+
+    
+  </Shapefile>
+  <Shapefile path="/Users/brendanhall/Sewall/Projects/ATFS/_ArcGIS/ATFS_Scratch/Data/Shapefiles/1457 Heistand LLC (2)/1457_Heistand_LLC.shp">
+    <CRSName>EPSG:WGS 84 / Pseudo-Mercator</CRSName>
+    <CRSWKT>PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["WGS_1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Longitude", EAST], 
+    AXIS["Latitude", NORTH], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Mercator_1SP"], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["x", EAST], 
+  AXIS["y", NORTH], 
+  AUTHORITY["EPSG","3857"]]</CRSWKT>
+    <EPSGCode>EPSG:3395</EPSGCode>
+  </Shapefile>
+</ShapefileCRSInfo>

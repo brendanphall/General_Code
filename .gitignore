@@ -1,6 +1,128 @@
+# -------------------------------
+# Java & Maven
+# -------------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.hprof
+target/
+build/
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+buildNumber.properties
 
+# Maven Wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# -------------------------------
+# IntelliJ IDEA
+# -------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# -------------------------------
+# Eclipse
+# -------------------------------
+.classpath
+.project
+.settings/
+
+# -------------------------------
+# Visual Studio Code
+# -------------------------------
+.vscode/
+
+# -------------------------------
+# Python (if any scripts)
+# -------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# -------------------------------
+# ArcGIS
+# -------------------------------
+*.sde
+*.gdb/
+*.mxd
+*.aprx
+*.tbx
+*.lpk
+*.lyr
+*.style
+*.lock
+
+# -------------------------------
+# Shapefile Handling
+# -------------------------------
+# Ignore all shapefile components by default
+*.shp*
+*.dbf
+*.shx
+*.prj
+*.sbn
+*.sbx
+*.cpg
+*.qpj
+
+# But allow the core four for basic shapefile sharing
+!*.shp
+!*.dbf
+!*.shx
+!*.prj
+
+# -------------------------------
+# Output / Logs
+# -------------------------------
+*.log
+CRSReport*.xml
+
+# -------------------------------
+# OS-Specific
+# -------------------------------
+
+# macOS
 .DS_Store
-Geoserver, Geoprocessing/.DS_Store
-Notion/__pycache__/Notion Sync.cpython-311.pyc
-.idea/workspace.xml
-/.idea
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
