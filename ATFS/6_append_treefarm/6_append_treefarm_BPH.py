@@ -66,10 +66,14 @@ if num_tmp != num_join:
 	sys.exit()
 
 
-# Remove all joins
-arcpy.management.RemoveJoin(in_layer_or_view=atfs_dbo_treefarm_join, join_name="")
+# Remove all joins with error handling
+if arcpy.Exists(atfs_dbo_treefarm_join):
+    arcpy.management.RemoveJoin(in_layer_or_view=atfs_dbo_treefarm_join, join_name="")
+else:
+    print("Warning: Join layer no longer exists")
+
 if arcpy.Exists(treefarm_view):
-	arcpy.management.Delete(treefarm_view)
+    arcpy.management.Delete(treefarm_view)
 
 
 # 🔎 Check for existing geometries
@@ -99,17 +103,26 @@ if num_join > 0:
     print("Either delete geometries from atfs_gdb or skip those from the shapefile.")
     sys.exit(1)
 
-# Remove all joins
-arcpy.management.RemoveJoin(in_layer_or_view=atfs_gdb_dbo_treefarm_join, join_name="")
+# Remove all joins with error handling
+if arcpy.Exists(atfs_gdb_dbo_treefarm_join):
+    arcpy.management.RemoveJoin(in_layer_or_view=atfs_gdb_dbo_treefarm_join, join_name="")
+else:
+    print("Warning: Join layer no longer exists")
 
 print("Append records from tmp_treefarm to atfs_gdb.dbo.treefarm")
-arcpy.management.Append(
-	inputs=tmp_treefarm,
-	target=atfs_gdb_DBO_TreeFarm,
-	schema_type="NO_TEST",
-	field_mapping=r'treefarm_i "treefarm_id" true true false 8 Double 0 0,First,#,{0},treefarm_i,-1,-1;parcelnumb "parcelnumber" true true false 8 Double 0 0,First,#,{0},parcelnumb,-1,-1'.format(tmp_treefarm),
-	subtype="",
-	expression=""
-)
 
-print(f"Append complete ✅ {num_tmp} features added.")
+try:
+    arcpy.management.Append(
+        inputs=tmp_treefarm,
+        target=atfs_gdb_DBO_TreeFarm,
+        schema_type="NO_TEST",
+        field_mapping=r'treefarm_i "treefarm_id" true true false 8 Double 0 0,First,#,{0},treefarm_i,-1,-1;parcelnumb "parcelnumber" true true false 8 Double 0 0,First,#,{0},parcelnumb,-1,-1'.format(tmp_treefarm),
+        subtype="",
+        expression=""
+    )
+    print(f"Append complete ✅ {num_tmp} features added.")
+except Exception as e:
+    print(f"Error during append operation: {e}")
+    sys.exit(1)
+
+
