@@ -39,7 +39,7 @@ Notes:
 
 Author: brendan.hall@sewall.com
 Date: 4_29_2025
-Version: 1.0
+Version: 1.1
 """
 
 import requests
@@ -49,8 +49,10 @@ import json
 def run_query(include_harvest_status=True):
     # Use the locations that seemed to work
     locations = [
-        "AXI", "CRO", "DER", "EST-S", "FUL", "GRA",
-        "HER", "IRO", "JAC", "LAT", "MLT", "MOB", "THM", "URB", "WDC"
+        "AUB", "AXI", "BGK", "BRU", "BWY", "CAM", "CON", "CPDLL", "CRO", "CWY",
+        "DAR", "DER", "ELD", "ELDG", "EST-L", "EST-S", "FUL", "GRA", "HAL",
+        "HER", "IRO", "JAC", "LAD", "LAT", "MAR", "MARS", "MHC", "MLT", "MOB",
+        "PAV", "PBAR", "THM", "URB", "WDC", "WSH", "WSHG", "ZAC"
     ]
 
     url = "https://maps.canfor.com/arcgis/rest/services/CSPWoodpro/WoodPro_NSApps_DB_Views/MapServer/3/query"
@@ -86,11 +88,6 @@ def run_query(include_harvest_status=True):
             count_resp = requests.get(url, params=count_params)
             count_resp.raise_for_status()
             count = count_resp.json().get("count", 0)
-
-            # Skip if more than 500 records to avoid timeouts
-            if count > 500:
-                print(f'{{ "report_location": "{loc}", "total_count": {count}, "status": "skipped - too many records", "time": "N/A" }}')
-                continue
 
             # Actual query
             start = time.time()
