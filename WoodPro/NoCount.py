@@ -33,13 +33,11 @@ Total time: 23,456.0 ms
 
 Notes:
 -----
-- Large datasets (>500 records) are skipped to avoid timeouts
-- "Unable to complete operation" errors usually indicate server resource limitations
-- Consider implementing pagination for comprehensive analysis of large datasets
+mill counts with 0 records are sumarized
 
 Author: brendan.hall@sewall.com
-Date: 4_29_2025
-Version: 1.1
+Date: 4_30_2025
+Version: 1.2
 """
 
 import requests
@@ -48,11 +46,17 @@ import json
 
 def run_query(include_harvest_status=True):
     # Use the locations that seemed to work
-    locations = [
+    locationsOld = [
         "AUB", "AXI", "BGK", "BRU", "BWY", "CAM", "CON", "CPDLL", "CRO", "CWY",
         "DAR", "DER", "ELD", "ELDG", "EST-L", "EST-S", "FUL", "GRA", "HAL",
         "HER", "IRO", "JAC", "LAD", "LAT", "MAR", "MARS", "MHC", "MLT", "MOB",
         "PAV", "PBAR", "THM", "URB", "WDC", "WSH", "WSHG", "ZAC"
+    ]
+
+    locations = [
+        "AXI", "CAM", "CON", "CRO", "DAR", "DER", "EST-L", "EST-S",
+        "FUL", "GRA", "HER", "IRO", "JAC", "LAT", "MLT", "MOB",
+        "THM", "URB", "WDC"
     ]
 
     url = "https://maps.canfor.com/arcgis/rest/services/CSPWoodpro/WoodPro_NSApps_DB_Views/MapServer/3/query"
