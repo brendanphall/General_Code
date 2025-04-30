@@ -48,11 +48,17 @@ import json
 
 def run_query(include_harvest_status=True):
     # Use the locations that seemed to work
-    locations = [
+    locationsOld = [
         "AUB", "AXI", "BGK", "BRU", "BWY", "CAM", "CON", "CPDLL", "CRO", "CWY",
         "DAR", "DER", "ELD", "ELDG", "EST-L", "EST-S", "FUL", "GRA", "HAL",
         "HER", "IRO", "JAC", "LAD", "LAT", "MAR", "MARS", "MHC", "MLT", "MOB",
         "PAV", "PBAR", "THM", "URB", "WDC", "WSH", "WSHG", "ZAC"
+    ]
+
+    locations = [
+        "AXI", "CAM", "CON", "CRO", "DAR", "DER", "EST-L", "EST-S",
+        "FUL", "GRA", "HER", "IRO", "JAC", "LAT", "MLT", "MOB",
+        "THM", "URB", "WDC"
     ]
 
     url = "https://maps.canfor.com/arcgis/rest/services/CSPWoodpro/WoodPro_NSApps_DB_Views/MapServer/3/query"
@@ -130,4 +136,4 @@ def run_query(include_harvest_status=True):
 
 # Run both scenarios
 run_query(include_harvest_status=True)
-run_query(include_harvest_status=False)
+#run_query(include_harvest_status=False)
