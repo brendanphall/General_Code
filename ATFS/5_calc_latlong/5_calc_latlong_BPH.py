@@ -8,7 +8,7 @@ print("Starting...")
 
 # Use shapefile instead of feature class in GDB
 
-shapefile_path = r"Z:\Users\brendanhall\GitHub\General_Code\ATFS\5_calc_latlong\tmp_treefarm\dbo_treefarm.shp"
+shapefile_path = r"Z:\GitHub\General_Code\ATFS\5_calc_latlong\tmp_treefarm\dbo_treefarm.shp"
 # ✅ DEBUG: Print the actual string path and verify it exists
 print("Shapefile path:", repr(shapefile_path))
 print("Path exists:", os.path.exists(shapefile_path))
