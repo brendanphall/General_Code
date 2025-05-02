@@ -8,7 +8,7 @@ print("Starting...")
 
 # Use shapefile instead of feature class in GDB
 
-shapefile_path = r"Z:\Users\brendanhall\GitHub\General_Code\ATFS\5_calc_latlong\tmp_treefarm\dbo_treefarm.shp"
+shapefile_path = r"Z:\GitHub\General_Code\ATFS\5_calc_latlong\tmp_treefarm\dbo_treefarm.shp"
 # ✅ DEBUG: Print the actual string path and verify it exists
 print("Shapefile path:", repr(shapefile_path))
 print("Path exists:", os.path.exists(shapefile_path))
@@ -85,8 +85,8 @@ with open(sqlfile, "w") as f_sql:
 			if totalfores > totalacres or abs(totalfores - totalacres) < 0.1:
 				totalfores = totalacres
 
-			sql1 = "update treefarm set totalacres = {0}, totalforestedacres = {1} where treefarm_id = {2}".format(totalacres, totalfores, treefarm_i)
-			sql2 = "update treefarmlocation set acres = {0}, longitude = '{1}', latitude = '{2}', forestedacres = {3} where treefarm_id = {4}".format(totalacres, longitude, latitude, totalfores, treefarm_i)
+			sql1 = "update treefarm set totalacres = {0}, totalforestedacres = {1} where treefarm_id = {2}".format(totalacres, totalfores, int(treefarm_i))
+			sql2 = "update treefarmlocation set acres = {0}, longitude = '{1}', latitude = '{2}', forestedacres = {3} where treefarm_id = {4}".format(totalacres, longitude, latitude, totalfores,int(treefarm_i))
 
 			f_sql.write(sql1+"\n")
 			f_sql.write(sql2+"\n")
