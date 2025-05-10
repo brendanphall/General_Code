@@ -135,5 +135,5 @@ def run_query(include_harvest_status=True):
         print(f"Total time: {total_time:,.1f} ms")
 
 # Run both scenarios
-run_query(include_harvest_status=True)
-#run_query(include_harvest_status=False)
+#run_query(include_harvest_status=True)
+run_query(include_harvest_status=False)
