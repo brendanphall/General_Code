@@ -126,3 +126,10 @@ $RECYCLE.BIN/
 .fuse_hidden*
 .directory
 .Trash-*
+*.prj
+*.fmw
+*.prj
+*.fmw
+ATFS/5_calc_latlong/tmp_treefarm/dbo_treefarm.prj
+FME/1_LoadTreeFarmShape_local_BPH.fmw
+FME/4_TreeFarm.fmw
