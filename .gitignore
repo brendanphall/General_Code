@@ -133,3 +133,6 @@ $RECYCLE.BIN/
 ATFS/5_calc_latlong/tmp_treefarm/dbo_treefarm.prj
 FME/1_LoadTreeFarmShape_local_BPH.fmw
 FME/4_TreeFarm.fmw
+WoodPro/Canfor Conseravtion/NatureServe/sc_conservation_sites_20250611_084035.geojson
+WoodPro/Canfor Conseravtion/NatureServe/sc_endangered_species_corrected_api_20250611_072537.json
+WoodPro/Canfor Conseravtion/NatureServe/sc_endangered_species_with_geometries.json
